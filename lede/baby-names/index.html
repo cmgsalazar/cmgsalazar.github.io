@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>  
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cherry Salazar | What’s In A Name?</title>
+
+    <meta property="og:title" content="What’s In A Name?">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="rose.png">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturCook:wght@700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-size: 17px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+            background-color: #ffffff;
+
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0 1em 0;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .footer {
+            background: #fff1f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+            padding-bottom: 1.2em;
+        }
+
+        h1 {
+            font-family: 'Pirata One', 'Wittgenstein', serif;
+            font-weight: 100;
+            font-size: 5em;
+            line-height: 0.8;
+        }
+
+        h2 {
+            font-family: 'Pirata One', 'Wittgenstein', serif;
+            font-weight: 100;
+            text-align: right;
+            line-height: 0;
+        }
+
+        hr { 
+            background: url('hr.jpg') no-repeat top center;
+            background-size: contain;
+            display: block;
+            height: 60px;
+            border: 0;
+            position: relative;
+        }
+
+        blockquote {
+            position: relative;
+            font-style: italic;
+            padding-bottom: 2em;
+            &:before {
+                content: '\201C';
+                position: absolute;
+                top: 0.25em;
+                left: -0.15em;
+                color: darken($white, 7%);
+                font-size: 6em;
+                z-index: -1;
+            }
+        }
+
+        blockquote:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+
+        .subhead {
+            font-family: 'Merriweather', Georgia, serif;
+            font-style: italic;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        iframe,
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-family: 'Merriweather', Georgia, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+            text-align: left;
+        }
+
+        
+        p.dropcap:first-letter {
+            float: left;
+            font-size: 60px;
+            line-height: 1;
+            font-weight: bold;
+            margin-right: 9px;
+            color: rgb(192, 2, 21);
+            font-family: 'UnifrakturCook', 'Wittgenstein', serif;
+            text-shadow: rgb(222, 222, 222) .05em .05em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+        .with-image-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: white;
+            text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .with-image-bg {
+            background-image: url("");
+        }
+
+    </style>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+    <div class="content">
+    <h1>What’s In A Name?</h1>
+    <h2>... a rose by any other name would smell just as sweet.</h1>
+    </div>
+</div>
+<hr>
+<div class="byline">
+    <div class="content">
+    <p>By Cherry Salazar <br>
+    <em>Published 14 July 2024</em></p>
+    </div>
+</div>
+
+<div class="content">
+    <p class="dropcap">In 1597, William Shakespeare penned these immortal words for the tragedy <em>Romeo and Juliet</em>. </p>
+    <p>Through these lines, Juliet argued that names are mere identifiers and a poor reflection of a person’s character. Prevented from marrying Romeo because of a feud between their families, Juliet compares Romeo to “a rose by any other name.” </p>
+    <p>Shakespeare’s fascination with roses did not end there, for the flowers were again mentioned in his comedy <em>A Midsummer Night's Dream</em> — written in the same year as <em>Romeo and Juliet</em> but believed to have been written after it — and in <em>The Two Noble Kinsmen</em>, in which he wrote:</p>
+    <blockquote>Of all flowers, methinks a rose is best. </blockquote>
+</div>
+
+<div class="full-width">
+    <figure>
+        <img src="romeo-and-juliet.jpg">
+        <figcaption>Sculpture of Romeo and Juliet in Lviv, Ukraine (Photo from <a href="https://stock.adobe.com/ca/images/lviv-ukraine-august-18-2021-sculpture-of-romeo-and-juliet/488629096">Adobe Stock</a>) </figcaption>
+    </figure>
+    </div>
+
+    <div class="content">
+    <p class="dropcap">Data from the U.S. Social Security Administration showed that while “Rose” is no longer among the most popular baby names, it continues to be an enduring option for parents.</p>
+    <p>Interestingly, a trend of gender-neutrality appears to begin to emerge. In 2016, 2017, 2020, and 2023, at least five male babies were named “Rose”. </p>
+
+<!-- div for d3 graph -->
+<center><div id="rose_viz"></div></center>
+
+<script>
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 90, left: 40},
+        width = 600 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3.select("#rose_viz")
+    .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    // parse the data
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rose-totals.csv", function(data) {
+
+    // X axis
+    var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(data.map(function(d) { return d.Year; }))
+    .padding(1);
+    svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    // Y axis
+    var y = d3.scaleLinear()
+    .domain([0, 3000])
+    .range([ height, 0]);
+    svg.append("g")
+    .call(d3.axisLeft(y));
+
+    // lines
+    svg.selectAll("myline")
+    .data(data)
+    .enter()
+    .append("line")
+        .attr("x1", function(d) { return x(d.Year); })
+        .attr("x2", function(d) { return x(d.Year); })
+        .attr("y1", function(d) { return y(d.Number); })
+        .attr("y2", y(0))
+        .attr("stroke", "green")
+
+
+    // circles, replace with image
+    svg.selectAll("mycircle")
+    .data(data)
+    .enter()
+    .append("svg:image")
+        .attr("xlink:href", "rose.png") 
+        .attr("width", 20) 
+        .attr("height", 20) 
+        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
+        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
+        .attr("preserveAspectRatio", "none");
+
+    })
+
+</script>
+
+    <p class="dropcap">The variation “Rosie” <img src="rosie.png" width="15" height="15"> has also seen growing popularity in the past two decades, while “Rosa” <img src="rosa.png" width="15" height="15"> has remained steady since the 2010s. &bull;</p>
+
+<!-- div for d3 graph -->
+<center><div id="other_roses"></div></center>
+
+<script>
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 90, left: 40},
+        width = 600 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg2 = d3.select("#other_roses")
+    .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    // parse the data
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rosie-totals.csv", function(data) {
+
+    // X axis
+    var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(data.map(function(d) { return d.Year; }))
+    .padding(1);
+    svg2.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    // Y axis
+    var y = d3.scaleLinear()
+    .domain([0, 1500])
+    .range([ height, 0]);
+    svg2.append("g")
+    .call(d3.axisLeft(y));
+
+    // lines
+    svg2.selectAll("myline")
+    .data(data)
+    .enter()
+    .append("line")
+        .attr("x1", function(d) { return x(d.Year); })
+        .attr("x2", function(d) { return x(d.Year); })
+        .attr("y1", function(d) { return y(d.Number); })
+        .attr("y2", y(0))
+        .attr("stroke", "green")
+
+
+    // circles, replace with image
+    svg2.selectAll("mycircle")
+    .data(data)
+    .enter()
+    .append("svg:image")
+        .attr("xlink:href", "rosie.png") 
+        .attr("width", 20) 
+        .attr("height", 20) 
+        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
+        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
+        .attr("preserveAspectRatio", "none");
+
+    })
+
+    // parse the data
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rosa-totals.csv", function(data) {
+
+    // X axis
+    var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(data.map(function(d) { return d.Year; }))
+    .padding(1);
+    svg2.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    // Y axis
+    var y = d3.scaleLinear()
+    .domain([0, 1500])
+    .range([ height, 0]);
+    svg2.append("g")
+    .call(d3.axisLeft(y));
+
+    // lines
+    svg2.selectAll("myline")
+    .data(data)
+    .enter()
+    .append("line")
+        .attr("x1", function(d) { return x(d.Year); })
+        .attr("x2", function(d) { return x(d.Year); })
+        .attr("y1", function(d) { return y(d.Number); })
+        .attr("y2", y(0))
+        .attr("stroke", "green")
+
+
+    // circles, replace with image
+    svg2.selectAll("mycircle")
+    .data(data)
+    .enter()
+    .append("svg:image")
+        .attr("xlink:href", "rosa.png") 
+        .attr("width", 20) 
+        .attr("height", 20) 
+        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
+        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
+        .attr("preserveAspectRatio", "none");
+
+    })
+
+</script>
+</div>
+
+<div class="footer">
+    <div class="content">
+    <p><em>Chart icons from <a href="https://www.flaticon.com/">Flaticon</a>; HR line image from <a href="https://stock.adobe.com/contributor/208521935/muhammadzulfan">Adobe Stock</a>.</em> This story was produced for the Data Visualization class of Columbia University’s <a href="https://ledeprogram.com/">Lede Program</a>. See <a href="https://github.com/cmgsalazar/baby-names/">Github repository</a> for process details. With thanks to Jonathan Soma and Youyou Zhou for the instruction. </p>
+    </div>
+</div>
+
+</body>
+</html>
