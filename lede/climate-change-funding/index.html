@@ -214,6 +214,40 @@
     </script>
   </div>
 
+  <script>
+    /*************
+    
+    This is the JavaScript that makes the scrolly work 
+    
+    *************/
+
+    /* 
+    This part attaches a scroll to the element with id="scrolly-images"    
+    */
+    (() => {
+      const scroller = scrollama()
+
+      scroller
+        .setup({
+          parent: document.querySelector("#scrolly-images"),
+          step: ".step",
+          offset: 0.6,
+          /* debug: true, */
+        })
+        .onStepEnter(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepin", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+        .onStepExit(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepout", { detail: { direction: direction } })
+          if (direction === "up" && element.previousElementSibling) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.previousElementSibling.dispatchEvent(event)
+          }
+        })
+
+      window.addEventListener("resize", scroller.resize)
+    })()
 
   /*
   This part sets up your actions. In this case, it's changing the image in the scrolly container.
