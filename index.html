@@ -1,122 +1,267 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cherry Salazar | Journalist</title>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="10; URL=https://cherrysalazar.carrd.co/"/>
-    <script type="text/javascript">
-        window.location.href = "https://cherrysalazar.carrd.co/"
-    </script>
 
-    <style>
-        body {
-            margin: 0;
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-rendering: optimizeLegibility;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .content {
-            max-width: 640px;
-            margin: auto;
-        }
+    <meta property="og:title" content="Cherry Salazar | Journalist">
+    <meta property="og:description" content="This is the portfolio of Cherry Salazar, a journalist specializing in investigations, multimedia, and data.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/marawi.png">
 
-        .header {
-            padding: 3em 0;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-        a {
-            color: #f05349;
-        }
+    <!-- Interface icons from https://icons8.com -->
 
-        .footer {
-            background: #f4f4f4;
-            text-align: center;
-            font-size: 0.8em;
-            margin-top: 4em;
-            padding: 4em 0;
-        }
-
-        figure {
-            margin: 0;
-            padding-bottom: 1.2em;
-        }
-
-        figcaption {
-            font-size: 0.8em;
-            text-align: center;
-            margin-top: 0.5em;
-            color: #666;
-        }
-
-        h1 {
-            font-family: 'Lora', Georgia, serif;
-            font-weight: bold;
-            font-size: 3em;
-            line-height: 1.1;
-        }
-
-        .subhead {
-            font-family: 'Lora', Georgia, serif;
-        }
-
-        iframe,
-        img,
-        video {
-            max-width: 100%;
-        }
-
-        p {
-            line-height: 1.6;
-            margin: 0;
-            padding-bottom: 1.2em;
-        }
-
-        ul {
-            margin: 0;
-            padding-bottom: 1em;
-            line-height: 1.6;
-        }
-
-        iframe {
-            padding-bottom: 1.2em;
-        }
-
-        code {
-            font-family: 'Courier New', monospace;
-            background: #fffbaf;
-            font-size: 0.85em;
-        }
-
-        .full-width figure {
-            text-align: center;
-        }
-
-        /* margin on mobile */
-        @media (max-width: 640px) {
-            body {
-                font-size: 18px;
-            }
-
-            .content {
-                padding-left: 0.5em;
-                padding-right: 0.5em;
-            }
-        }
-    </style>
 </head>
-
 <body>
-    <div class="content">
-        <div class="header">
-            <h1>Cherry Salazar</h1>
-            <h2>multimedia and investigative journalist from Manila, Philippines</h2>
-            <p>This page is currently under construction. If you are not redirected within 10 seconds, click <a href="https://cherrysalazar.carrd.co/">here</a> to see my profile.</p>
-        </div>
-    </div>
-</body>
+    <button id="menu-toggle">☰</button>
 
+    <header>
+        <h1>Cherry Salazar</h1>
+        <p class="bio">Cherry Salazar <i>(she/her)</i> is a multi-awarded journalist from the Philippines, with over a decade of combined experience in print, broadcast, and online media, specializing in <strong>in-depth, investigative, and data-driven reporting</strong>. </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="images/home.png" height="16px"></a></li>
+            <li><a href="#investigations">Investigations</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#documentaries">Documentaries</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <main class="container">
+        <section id="investigations" class="section">
+            <h2>Investigations</h2>
+            <div class="grid">
+                <!-- Energy transition series, pt. 1 -->
+                <div class="item">
+                    <a href="https://www.philstar.com/headlines/climate-and-environment/2023/03/07/2249961/verde-island-passage-danger-lng-projects-flock-batangas" target="_blank"><img src="images/pcij-vip.jpg" alt="Power plant expansions in Ilijan, Batangas City as seen on Sept. 8, 2022."></a>
+                    <h3><a href="https://www.philstar.com/headlines/climate-and-environment/2023/03/07/2249961/verde-island-passage-danger-lng-projects-flock-batangas" target="_blank">Verde Island Passage in danger as LNG projects flock to Batangas</a></h3>
+                    <p>First part of a reporting series on the Philippines’ pivot to imported liquefied natural gas (LNG) despite adverse environmental impacts 
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'environment')">environment</span>
+                        <span class="tag" onclick="toggleTag(this, 'energy')">energy</span>
+                        <span class="tag" onclick="toggleTag(this, 'biodiversity')">biodiversity</span>
+                    </div>
+                </div>
+                
+                <!-- Energy transition series, pt. 2 -->
+                <!-- <div class="item">
+                    <a href="https://pressone.ph/the-last-fishermen-of-ilijan/" target="_blank"></a><img src="images/pcij-ilijan.jpg" alt="Gas projects destroy way of life in Batangas fishing communities"></a>
+                    <h3><a href="https://pressone.ph/the-last-fishermen-of-ilijan/" target="_blank">The last fisherment of Ilijan</a></h3>
+                    <p>Second part of a reporting series on the Philippines’ pivot to imported liquefied natural gas (LNG) despite loss of livelihoods 
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'energy')">energy</span>
+                        <span class="tag" onclick="toggleTag(this, 'labor')">labor</span>
+                        <span class="tag" onclick="toggleTag(this, 'food security')">food security</span>
+                    </div>
+                </div> -->
+                <!-- Energy transition series, pt. 3 -->
+                <!-- <div class="item">
+                    <a href="https://icsc.ngo/liquefied-natural-gas-a-dirty-costly-detour-pcij/" target="_blank"><img src="images/pcij-lng.jpg" alt="LNG Power plant expansions in Ilijan, Batangas City"></a>
+                    <h3><a href="https://icsc.ngo/liquefied-natural-gas-a-dirty-costly-detour-pcij/" target="_blank">Liquefied natural gas: A dirty, costly detour</a></h3>
+                    <p>Third part of a reporting series on the Philippines’ pivot to imported liquefied natural gas (LNG) despite volatile global markets and renewable energy potential
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'energy')">energy</span>
+                        <span class="tag" onclick="toggleTag(this, 'business')">business</span>
+                    </div>
+                </div> -->
+                
+                <!-- Election procurement -->
+                <div class="item">
+                    <a href="https://pcij.org/2022/05/04/what-happened-to-comelecs-voter-verification-project-in-2019/" target="_blank"><img src="images/vrvm.jpg" alt="VRVM malfunction caused long queues in Dansalan, Marawi City in the May 2019 midterm polls"></a>
+                    <h3><a href="https://pcij.org/2022/05/04/what-happened-to-comelecs-voter-verification-project-in-2019/" target="_blank">Down the drain: What happened to Comelec’s P1B voter verification project?</h3></a>
+                    <p>A billion-peso pilot project of the Philippines’ poll body has become a skeleton in its closet
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
+                        <span class="tag" onclick="toggleTag(this, 'procurement')">procurement</span>
+                    </div>
+                </div>
+                <!-- OFW debt -->
+                <div class="item">
+                    <a href="https://pcij.org/2022/05/08/marcos-presidential-elections-massive-disinformation/" target="_blank"><img src="images/ofw-debt.jpg" alt="Marcos leads presidential race amid massive disinformation"></a>
+                    <h3><a href="https://pcij.org/2022/05/08/marcos-presidential-elections-massive-disinformation/" target="_blank">OFWs are harassed — Jessica got jail time — over loans they’re forced to make to get jobs abroad</a></h3>
+                    <p>First part of a report on predatory lending and labor abuse for migrant workers from the Philippines, produced in collaboration with the International Consortium of Investigative Journalists
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'labor')">labor</span>
+                        <span class="tag" onclick="toggleTag(this, 'migration')">migration</span>
+                    </div>
+                </div>
+                <!-- Marcos disinformation -->
+                <div class="item">
+                    <a href="https://pcij.org/2022/05/08/marcos-presidential-elections-massive-disinformation/" target="_blank"><img src="images/marcos.jpg" alt="Marcos leads presidential race amid massive disinformation"></a>
+                    <h3><a href="https://pcij.org/2022/05/08/marcos-presidential-elections-massive-disinformation/" target="_blank">Marcos leads presidential race amid massive disinformation</a></h3>
+                    <p>Historical revisionism was the main disinformation narrative in the 2022 presidential elections, but tactics have evaded fact-checkers
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
+                        <span class="tag" onclick="toggleTag(this, 'disinformation')">disinformation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="section">
+            <h2>Data</h2>
+            <div class="grid">
+                <!-- Marcos, Robredo socmed spending -->
+                <div class="item">
+                    <a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank"><img src="images/2022prez-socmed.jpg" alt=""></a>
+                    <h3><a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank">Robredo leads, Marcos snubs advertising on Facebook</a></h3>
+                    <p>With campaigns shifting online, social media has become a crucial battleground during the 2022 presidential elections in the Philippines
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
+                        <span class="tag" onclick="toggleTag(this, 'corruption')">campaign finance</span>
+                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
+                    </div>
+                </div>
+                <!-- 2022 senatorial elections (PCIJ) -->
+                <div class="item">
+                    <a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank"><img src="images/2022senate-cf.jpg" alt=""></a>
+                    <h3><a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank">Moneyed kin, personal coffers paved Senate victories in 2022</a></h3>
+                    <p>Examines campaign fund sources of winning candidates in the 2022 senatorial elections in the Philippines
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
+                        <span class="tag" onclick="toggleTag(this, 'corruption')">campaign finance</span>
+                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
+                    </div>
+                </div>
+                <!-- Repeat this structure for 4 more items -->
+                <div class="item">
+                    <a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank"><img src="images/covid-water-access.jpg" alt=""></a>
+                    <h3><a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank">Pandemic underscores struggles of Manila’s urban poor communities without access to clean water</a></h3>
+                    <p>As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'covid-19')">covid-19</span>
+                        <span class="tag" onclick="toggleTag(this, 'health')">health</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="documentaries" class="section">
+            <h2>Documentaries</h2>
+            <div class="grid">
+                <!-- Fedelina -->
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=_CEwRE2ZYXA" target="_blank"><img src="images/fedelina.jpg" alt="Fedelina Lugasan"></a>
+                    <h3><a href="https://www.youtube.com/watch?v=_CEwRE2ZYXA" target="_blank">Fedelina: A Stolen Life (2020)</a></h3>
+                    <p>A long-form documentary chronicling the life story of human trafficking survivor Fedelina Lugasan, who for decades served four generations of a Filipino migrant family in the U.S.
+                        <em>(First aired on ABS-CBN, 2020; won a Silver World Medal in the New York Festivals International TV and Film Awards and Best Documentary Program (Philippines) in the Asian Academy Creative Awards)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'migration')">migration</span>
+                        <span class="tag" onclick="toggleTag(this, 'trafficking')">trafficking</span>
+                    </div>
+                </div>
+                <!-- Marawi: DKP -->
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=izwrXzA9O4c"><img src="images/dkp.jpg" alt="Main battle area in Marawi"></a>
+                    <h3><a href="https://www.youtube.com/watch?v=izwrXzA9O4c">‘Di Ka Pasisiil (Never Shall Be Conquered) (2017)</a></h3>
+                    <p>A long-form documentary on the Marawi siege that that delves into the realities of a months-long, unprecedented urban war between government forces and an Islamic State-inspired terror group in Marawi, Lanao Del Sur, and gave the public its first unadulterated view of the battle area
+                    <em>(First aired on ABS-CBN; won the Philippines’ first Gold Dolphin Award in the Cannes Corporate Media & TV Awards, a Gold World Medal in New York Festivals International TV and Film Awards, and several others)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'conflict')">conflict</span>
+                    </div>
+                </div>
+                <!-- Mental health -->
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=jWYQlmqsxZY"><img src="images/invisible.jpg" alt=""></a>
+                    <h3><a href="https://www.youtube.com/watch?v=jWYQlmqsxZY">Invisible (2019)</a></h3>
+                    <p>A long-form documentary destigmatizing mental health, an issue considered taboo by many Filipinos, that highlighted the stories of recovery and redemption of those diagnosed with mental illnesses, and of those who have learned to cope with the loss of a loved one over suicide
+                    <em>(First aired on ABS-CBN; screened in the first documentary festival in the Philippines)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'health')">health</span>
+                        <span class="tag" onclick="toggleTag(this, 'stigma')">stigma</span>
+                    </div>
+                </div>
+                <!-- HIV -->
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=1V4XTg5x_Xw"><img src="images/hiv-rising.jpg" alt=""></a>
+                    <h3><a href="https://www.youtube.com/watch?v=1V4XTg5x_Xw">HIV Rising (2018)</a></h3>
+                    <p>A long-form documentary investigating the alarming spike of HIV cases in the Philippines amid a global downward trajectory
+                    <em>(First aired on ABS-CBN; finalist in the New York Festivals International TV and Film Awards)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'health')">health</span>
+                        <span class="tag" onclick="toggleTag(this, 'stigma')">stigma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="multimedia" class="section">
+            <h2>Multimedia</h2>
+            <div class="grid">
+                <!-- Podcast: OSAEC, pt. 1 -->
+                <div class="item">
+                    <a href="https://open.spotify.com/episode/3TNiThKNhtE5MXvnAHCkZ9" target="_blank"><img src="images/osaec.jpg" alt=""></a>
+                    <h3><a href="https://open.spotify.com/episode/3TNiThKNhtE5MXvnAHCkZ9" target="_blank">Online child sex abuse surges during pandemic</a></h3>
+                    <p>First episode of the Digital Sex Crimes in Asia series, which explores the online sexual abuse and exploitation of children 
+                        <em>(Produced in collaboration with the Judith Neilson Institute)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'trafficking')">trafficking</span>
+                        <span class="tag" onclick="toggleTag(this, 'digital crimes')">digital crimes</span>
+                        <span class="tag" onclick="toggleTag(this, 'podcast')">podcast</span>
+                    </div>
+                </div>
+                <!-- Podcast: OSAEC, pt. 2 -->
+                <div class="item">
+                    <a href="https://open.spotify.com/episode/2fjTaybX79pduLHgXPOZZt?si=-VP_Yo3zSDS9Ceijw_OKCw" target="_blank"><img src="images/osaec-pt2.jpg" alt=""></a>
+                    <h3><a href="https://open.spotify.com/episode/2fjTaybX79pduLHgXPOZZt?si=-VP_Yo3zSDS9Ceijw_OKCw" target="_blank">How online sexual abuse leaves child victims scarred for life</a></h3>
+                    <p>Second episode of the Digital Sex Crimes in Asia series, which explores the online sexual abuse and exploitation of children 
+                        <em>(Produced in collaboration with the Judith Neilson Institute)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'trafficking')">trafficking</span>
+                        <span class="tag" onclick="toggleTag(this, 'digital crimes')">digital crimes</span>
+                        <span class="tag" onclick="toggleTag(this, 'podcast')">podcast</span>
+                    </div>
+                </div>
+                <!-- Social media -->
+                <div class="item">
+                    <a href="https://www.instagram.com/p/Cplu-DqPYkE/?igsh=MXg1NG5ncG94OWlqaA%3D%3D&img_index=1" target="_blank"><img src="images/ilijan-photo-essay.jpg" alt=""></a>
+                    <h3><a href="https://www.instagram.com/p/Cplu-DqPYkE/?igsh=MXg1NG5ncG94OWlqaA%3D%3D&img_index=1" target="_blank">Fisherfolk in Batangas go against the tide</a></h3>
+                    <p>Social media complement to <a href="https://www.rappler.com/environment/fisherfolk-barangay-ilijan-batangas-city-go-against-tide-pcij-report/" target="_blank">a photo essay</a> that is part of a reporting series on energy transition</p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'energy')">energy</span>
+                        <span class="tag" onclick="toggleTag(this, 'labor')">labor</span>
+                        <span class="tag" onclick="toggleTag(this, 'social media')">social media</span>
+                        <span class="tag" onclick="toggleTag(this, 'social media')">photo essay</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="mailto:cmgsalazar@proton.me"><img src="images/email.png" height="28px" width="28px"></a>
+            <a href="https://twitter.com/CMGSalazar" target="_blank"><img src="images/x.png" height="24px" width="24px"></a>
+            <a href="https://www.linkedin.com/in/cmgsalazar" target="_blank"><img src="images/linkedin.png" height="24px" width="24px"></a>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <script src="scriptFilters.js"></script>
+    <script src="scriptOverflow.js"></script>
+
+</body>
 </html>
