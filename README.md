@@ -10,3 +10,8 @@ This serves as my protfolio website, a repository for my works from documentarie
 ### Current interests *(what you may likely see more of in the future)*
 * Python
 * Interactives
+* Photojournalism
+
+## Copyright
+
+Most content are properties of my previous employers. No copyright infringement intended. I am only keeping personal copies here when the original publication no longer works because, as we know, the internet is not forever. 
