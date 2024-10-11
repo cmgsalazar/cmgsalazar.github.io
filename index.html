@@ -31,8 +31,8 @@
     <nav>
         <ul>
             <li><a href="index.html"><img src="images/home.png" height="16px"></a></li>
-            <li><a href="#investigations">Investigations</a></li>
             <li><a href="#data">Data</a></li>
+            <li><a href="#investigations">Investigations</a></li>
             <li><a href="#documentaries">Documentaries</a></li>
             <li><a href="#multimedia">Multimedia</a></li>
         </ul>
@@ -41,6 +41,71 @@
     <br>
 
     <main class="container">
+        <section id="data" class="section">
+            <h2>Data</h2>
+            <div class="grid">
+                <!-- Climate change finding -->
+                <div class="item">
+                    <a href="https://cmgsalazar.github.io/lede/climate-change-funding/" target="_blank"><img src="lede/climate-change-funding/banner.png" alt=""></a>
+                    <h3><a href="https://cmgsalazar.github.io/lede/climate-change-funding/" target="_blank">China, a top lender, still receives billions in aid</a></h3>
+                    <p>China has become the world’s largest official creditor, particularly for low- and middle-income nations. But data showed the country is also a top recipient of aid. 
+                        <em>(Personal project; work in progress)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'python')">python</span>
+                        <span class="tag" onclick="toggleTag(this, 'scrollama')">scrollama</span>
+                        <span class="tag" onclick="toggleTag(this, 'climate change')">climate change</span>
+                        <span class="tag" onclick="toggleTag(this, 'development finance')">development finance</span>
+                    </div>
+                </div>
+                <!-- NYC hate crimes -->
+                <div class="item">
+                    <a href="https://cmgsalazar.github.io/lede/nyc-hate-crimes/" target="_blank"><img src="lede/nyc-hate-crimes/images/banner.png" alt=""></a>
+                    <h3><a href="https://cmgsalazar.github.io/lede/nyc-hate-crimes/" target="_blank">Jews, Asians, gays most targeted for hate crimes: NYPD data</a></h3>
+                    <p>Looked into New York Police Department crime reports data from the lens of racial, religious, and gender identity biases 
+                        <em>(Personal project)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'python')">python</span>
+                        <span class="tag" onclick="toggleTag(this, 'crimes')">hate crimes</span>
+                    </div>
+                </div>
+                <!-- Marcos, Robredo socmed spending -->
+                <div class="item">
+                    <a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank"><img src="images/2022prez-socmed.jpg" alt=""></a>
+                    <h3><a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank">Robredo leads, Marcos snubs advertising on Facebook</a></h3>
+                    <p>With campaigns shifting online, social media has become a crucial battleground during the 2022 presidential elections in the Philippines
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
+                        <span class="tag" onclick="toggleTag(this, 'campaign finance')">campaign finance</span>
+                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
+                    </div>
+                </div>
+                <!-- 2022 senatorial elections (PCIJ) -->
+                <div class="item">
+                    <a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank"><img src="images/2022senate-cf.jpg" alt=""></a>
+                    <h3><a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank">Moneyed kin, personal coffers paved Senate victories in 2022</a></h3>
+                    <p>Examines campaign fund sources of winning candidates in the 2022 senatorial elections in the Philippines
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
+                        <span class="tag" onclick="toggleTag(this, 'campaign finance')">campaign finance</span>
+                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
+                    </div>
+                </div>
+                <!-- Repeat this structure for 4 more items -->
+                <div class="item">
+                    <a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank"><img src="images/covid-water-access.jpg" alt=""></a>
+                    <h3><a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank">Pandemic underscores struggles of Manila’s urban poor communities without access to clean water</a></h3>
+                    <p>As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford
+                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
+                    <div class="tags">
+                        <span class="tag" onclick="toggleTag(this, 'covid-19')">covid-19</span>
+                        <span class="tag" onclick="toggleTag(this, 'health')">health</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="investigations" class="section">
             <h2>Investigations</h2>
             <div class="grid">
@@ -54,6 +119,7 @@
                         <span class="tag" onclick="toggleTag(this, 'environment')">environment</span>
                         <span class="tag" onclick="toggleTag(this, 'energy')">energy</span>
                         <span class="tag" onclick="toggleTag(this, 'biodiversity')">biodiversity</span>
+                        <span class="tag" onclick="toggleTag(this, 'climate change')">climate change</span>
                     </div>
                 </div>
                 
@@ -112,47 +178,6 @@
                     <div class="tags">
                         <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
                         <span class="tag" onclick="toggleTag(this, 'disinformation')">disinformation</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="data" class="section">
-            <h2>Data</h2>
-            <div class="grid">
-                <!-- Marcos, Robredo socmed spending -->
-                <div class="item">
-                    <a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank"><img src="images/2022prez-socmed.jpg" alt=""></a>
-                    <h3><a href="https://news.abs-cbn.com/spotlight/01/16/22/robredo-leads-marcos-snubs-advertising-on-facebook" target="_blank">Robredo leads, Marcos snubs advertising on Facebook</a></h3>
-                    <p>With campaigns shifting online, social media has become a crucial battleground during the 2022 presidential elections in the Philippines
-                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
-                    <div class="tags">
-                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
-                        <span class="tag" onclick="toggleTag(this, 'corruption')">campaign finance</span>
-                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
-                    </div>
-                </div>
-                <!-- 2022 senatorial elections (PCIJ) -->
-                <div class="item">
-                    <a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank"><img src="images/2022senate-cf.jpg" alt=""></a>
-                    <h3><a href="https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/" target="_blank">Moneyed kin, personal coffers paved Senate victories in 2022</a></h3>
-                    <p>Examines campaign fund sources of winning candidates in the 2022 senatorial elections in the Philippines
-                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
-                    <div class="tags">
-                        <span class="tag" onclick="toggleTag(this, 'elections')">elections</span>
-                        <span class="tag" onclick="toggleTag(this, 'corruption')">campaign finance</span>
-                        <span class="tag" onclick="toggleTag(this, 'politics')">politics</span>
-                    </div>
-                </div>
-                <!-- Repeat this structure for 4 more items -->
-                <div class="item">
-                    <a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank"><img src="images/covid-water-access.jpg" alt=""></a>
-                    <h3><a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank">Pandemic underscores struggles of Manila’s urban poor communities without access to clean water</a></h3>
-                    <p>As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford
-                        <em>(Originally published by the Philippine Center for Investigative Journalism)</em></p>
-                    <div class="tags">
-                        <span class="tag" onclick="toggleTag(this, 'covid-19')">covid-19</span>
-                        <span class="tag" onclick="toggleTag(this, 'health')">health</span>
                     </div>
                 </div>
             </div>
@@ -218,7 +243,7 @@
                         <em>(Produced in collaboration with the Judith Neilson Institute)</em></p>
                     <div class="tags">
                         <span class="tag" onclick="toggleTag(this, 'trafficking')">trafficking</span>
-                        <span class="tag" onclick="toggleTag(this, 'digital crimes')">digital crimes</span>
+                        <span class="tag" onclick="toggleTag(this, 'crimes')">digital crimes</span>
                         <span class="tag" onclick="toggleTag(this, 'podcast')">podcast</span>
                     </div>
                 </div>
@@ -230,7 +255,7 @@
                         <em>(Produced in collaboration with the Judith Neilson Institute)</em></p>
                     <div class="tags">
                         <span class="tag" onclick="toggleTag(this, 'trafficking')">trafficking</span>
-                        <span class="tag" onclick="toggleTag(this, 'digital crimes')">digital crimes</span>
+                        <span class="tag" onclick="toggleTag(this, 'crimes')">digital crimes</span>
                         <span class="tag" onclick="toggleTag(this, 'podcast')">podcast</span>
                     </div>
                 </div>
