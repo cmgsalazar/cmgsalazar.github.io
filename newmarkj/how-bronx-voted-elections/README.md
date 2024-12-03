@@ -6,4 +6,4 @@ Find the codes for scrapers and analysis of the 2024 elections unofficial result
 
 ## Visualization
 
-JSON files were downloaded via [NYC Planning](https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page) and [toddwschneider](https://github.com/toddwschneider/nyc-presidential-election-map), then processed through [Mapshaper](https://mapshaper.org/) and Adobe Illustrator.
+JSON files were downloaded via [NYC Planning](https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page) and [toddwschneider](https://github.com/toddwschneider/nyc-presidential-election-map), then processed through [Mapshaper](https://mapshaper.org/) and Adobe Illustrator and Photoshop.
