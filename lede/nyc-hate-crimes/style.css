@@ -108,6 +108,7 @@ code {
     position: relative;
     background-size: cover;
     margin-bottom: 2em;
+    background-image: url('images/banner.png');
 
     /* center everything inside */
     min-height: 70svh;
@@ -119,10 +120,6 @@ code {
     color: white;
     text-shadow: 0px 0px 30px black,
         0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.with-image-bg {
-    background-image: url('images/banner.png');
 }
 
 /* for two-column layout */        
