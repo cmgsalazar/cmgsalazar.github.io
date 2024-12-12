@@ -89,56 +89,56 @@ code {
         font-size: 18px;
     }
 
-    .content {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
+.content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 
-    .two-column-container {
-        flex-direction: column; /* Stack columns on top of each other on smaller screens */
-    }
+.two-column-container {
+    flex-direction: column; /* stack columns on top of each other on smaller screens */
+}
 
-    .column {
-        width: 100%; /* Full width for columns on smaller screens */
-        margin-bottom: 10px; /* Margin between stacked columns */
-        }
+.column {
+    width: 100%; /* full width for columns on smaller screens */
+    margin-bottom: 10px; /* margin between stacked columns */
     }
+}
 
-    .with-image-bg {
-        position: relative;
-        background-size: cover;
-        margin-bottom: 2em;
+.with-image-bg {
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
 
-        /* Center everything inside */
-        min-height: 70svh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* center everything inside */
+    min-height: 70svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        /* White text with a shadow */
-        color: white;
-        text-shadow: 0px 0px 30px black,
-            0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
+    /* white text with a shadow */
+    color: white;
+    text-shadow: 0px 0px 30px black,
+        0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
-    .with-image-bg {
-        background-image: url('images/banner.png');
-    }
+.with-image-bg {
+    background-image: url('images/banner.png');
+}
 
-    /* For two-column layout */        
-    .two-column-container {
-        display: flex;
-        margin: 0 auto; 
-        justify-content: center;
-        max-width: 800px;
-    }
-        
-    .two-column {
-        display: flex;
-        margin-left: 200px;
-        margin-right: 200px;
-    }
+/* for two-column layout */        
+.two-column-container {
+    display: flex;
+    margin: 0 auto; 
+    justify-content: center;
+    max-width: 800px;
+}
+    
+.two-column {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+}
 
-    .column {
-        flex: 1;
-    }
+.column {
+    flex: 1;
+}
