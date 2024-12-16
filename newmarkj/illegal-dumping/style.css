@@ -176,6 +176,7 @@ body {
     justify-content: center;
     margin-bottom: 50svh;
     transform: translate(0px, 0px);
+    margin-bottom: 70vh; /* change this to adjust the padding between steps */
 }
 
 .step p {

@@ -21,7 +21,6 @@
   <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
-
 </head>
 
 <body>
@@ -136,12 +135,13 @@
 
   <script>
   /*************
-  This is the JavaScript that makes the scrolly work 
+  This is the JavaScript that makes the scrolly work! 
   *************/
 
     /* 
     This part attaches a scroll to the element with id="scrolly-images"    
     */
+
     (() => {
       const scroller = scrollama()
 
@@ -168,8 +168,9 @@
     })()
 
     /*
-    This part sets up your actions. In this case, it's changing the image in the scrolly container.
+    This part sets scrolly actions.
     */
+
     d3.select("#step1").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "images/trash-01.jpg")
     })
@@ -189,14 +190,8 @@
     d3.select("#step5").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "images/trash-05.jpg")
     })
-
+    
   </script>
-  <style>
-    /* Change this to adjust the padding between steps */
-    .step {
-      margin-bottom: 70vh;
-    }
-  </style>
 
 </body>
 </html>
