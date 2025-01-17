@@ -9,7 +9,7 @@
     <meta property="og:title" content="What’s In A Name?">
     <meta property="og:description" content="">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="rose.png">
+    <meta property="og:image" content="images/rose.png">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +77,7 @@
         }
 
         hr { 
-            background: url('hr.jpg') no-repeat top center;
+            background: url("images/hr.jpg") no-repeat top center;
             background-size: contain;
             display: block;
             height: 60px;
@@ -219,7 +219,7 @@
 
 <div class="full-width">
     <figure>
-        <img src="romeo-and-juliet.jpg">
+        <img src="images/romeo-and-juliet.jpg">
         <figcaption>Sculpture of Romeo and Juliet in Lviv, Ukraine (Photo from <a href="https://stock.adobe.com/ca/images/lviv-ukraine-august-18-2021-sculpture-of-romeo-and-juliet/488629096">Adobe Stock</a>) </figcaption>
     </figure>
     </div>
@@ -286,7 +286,7 @@
     .data(data)
     .enter()
     .append("svg:image")
-        .attr("xlink:href", "rose.png") 
+        .attr("xlink:href", "images/rose.png") 
         .attr("width", 20) 
         .attr("height", 20) 
         .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
@@ -297,7 +297,7 @@
 
 </script>
 
-    <p class="dropcap">The variation “Rosie” <img src="rosie.png" width="15" height="15"> has also seen growing popularity in the past two decades. Meanwhile, “Rosa” <img src="rosa.png" width="15" height="15"> slowly declined in the late 1990s and at the turn of the new millennium before steadying in the 2010s. The variation was also recorded for a few male babies in 1997, 1999, 2000, 2002, and 2003. &bull;</p>
+    <p class="dropcap">The variation “Rosie” <img src="images/rosie.png" width="15" height="15"> has also seen growing popularity in the past two decades. Meanwhile, “Rosa” <img src="images/rosa.png" width="15" height="15"> slowly declined in the late 1990s and at the turn of the new millennium before steadying in the 2010s. The variation was also recorded for a few male babies in 1997, 1999, 2000, 2002, and 2003. &bull;</p>
 
 <!-- div for d3 graph -->
 <center><div id="other_roses"></div></center>
@@ -357,7 +357,7 @@
     .data(data)
     .enter()
     .append("svg:image")
-        .attr("xlink:href", "rosie.png") 
+        .attr("xlink:href", "images/rosie.png") 
         .attr("width", 20) 
         .attr("height", 20) 
         .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
@@ -405,7 +405,7 @@
     .data(data)
     .enter()
     .append("svg:image")
-        .attr("xlink:href", "rosa.png") 
+        .attr("xlink:href", "images/rosa.png") 
         .attr("width", 20) 
         .attr("height", 20) 
         .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
