@@ -193,6 +193,7 @@ body {
     text-align: center;
     padding: 1.2em !important;
     background-color: #ffa880cc;
+    border-radius: 20px;
 }
 
 .sticky-thing > canvas {
