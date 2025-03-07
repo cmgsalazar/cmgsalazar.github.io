@@ -48,13 +48,13 @@
     <header>
         <div class="title-container">
             <h1>Hello! <span class="shake">👋🏻</span> My name is <span class="bio-name">Cherry&nbsp;Salazar</span>. </h1>
-            <h4>I am a New York-based <span class="highlight">investigative</span> journalist with over a decade of experience, specializing in <span class="highlight">data-driven</span> and <span class="highlight">multimedia</span>&nbsp;reporting. </h4>
+            <h4>I am a New York-based <span class="highlight-investigative">investigative</span> journalist with over a decade of experience, specializing in <span class="highlight-data">data-driven</span> and <span class="highlight-reporting">multimedia</span>&nbsp;reporting. </h4>
             <!-- COLOR THE "highlighted" texts so the color theme makes sense throughout the page -->
         </div>
 
         <!-- BIO -->
         <div class="bio-container">
-            <column class="column profile-photo"> 
+            <div class="column profile-photo"> 
                 <div class="flip-card">
                     <figure class="card-front">
                         <img src="images/headshot.jpg"> 
@@ -69,15 +69,15 @@
                     <button class="awards" onclick="loadContent('section2')">Awards</button>
                     <button class="awards" onclick="loadContent('section3')">Bio</button>
                 </div> -->
-            </column>
+            </div>
 
-            <column class="column profile-text">
+            <div class="column profile-text">
                 <p class="bio">I am currently pursuing M.A. in Journalism at the <a href="https://www.journalism.cuny.edu/" target="_blank" class="data">Craig&nbsp;Newmark Graduate School of Journalism</a>, where I&nbsp;founded and serve as the first president of the <a href="https://www.ire.org/" target="_blank" class="investigative">Investigative Reporters and Editors (IRE)</a> pilot student chapter. I&nbsp;am also an alumna of <a href="https://ledeprogram.com/" target="_blank" class="data">Columbia&nbsp;University’s Lede Program for Data Journalists</a>. </p>
                     
                 <p class="bio">Previously, I worked as the sole multimedia reporter of nonprofit newsroom <a href="https://pcij.org/" target="_blank" class="investigative">Philippine Center for Investigative Journalism</a> where I covered elections, disinformation, energy transition, and attacks on press freedom, among others. I&nbsp;also produced television documentaries for <a href="https://www.abs-cbn.com/" target="_blank" class="documentary">ABS-CBN</a>, the largest media network in the Philippines at the time until it was forced off the air by the Duterte administration in 2020. </p>
                 
                 <p class="bio">In 2022, I&nbsp;was invited by the U.S. State Department to participate in the <a href="https://eca.state.gov/highlight/edward-r-murrow-program-journalists" target="_blank" class="reporting">Edward&nbsp;R.&nbsp;Murrow Program for Journalists</a> as part of its premier professional exchange program. I&nbsp;also contributed to the <a href="https://gijn.org/" target="_blank" class="investigative">Global Investigative Journalism Network</a>’s guide on <a href="https://gijn.org/resource/guide-introduction-investigative-journalism/" target="_blank" class="reporting">investigative reporting</a>. </p>
-            </column>
+            </div>
         </div>
     </header>
 
@@ -214,6 +214,32 @@
     </footer>
 
     <button id="back-to-top" title="Back to top">↑</button>
+
+    <script>
+        // back-to-top button functionality
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+
+        // mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
 
     
 </body>
