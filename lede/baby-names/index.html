@@ -226,13 +226,12 @@
 
     <div class="content">
     <p class="dropcap">Data from the U.S. Social Security Administration showed that while “Rose” is no longer among the most popular baby names, it continues to be an enduring option for parents.</p>
-    <p>Interestingly, a trend of gender-neutrality appears to begin to emerge. In 2016, 2017, 2020, and 2023, at least five male babies were named “Rose”. </p>
+    <p>Interestingly, a semblance of gender-neutrality appears to begin to emerge. In 2016, 2017, 2020, and 2023, at least five male babies <img src="images/rose-male.png" width="15" height="15"> were named “Rose”. </p>
 
 <!-- div for d3 graph -->
 <center><div id="rose_viz"></div></center>
 
 <script>
-
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 90, left: 40},
         width = 600 - margin.left - margin.right,
@@ -248,7 +247,7 @@
             "translate(" + margin.left + "," + margin.top + ")");
 
     // parse the data
-    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rose-totals.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/refs/heads/main/data/rose-totals.csv", function(data) {
 
     // X axis
     var x = d3.scaleBand()
@@ -280,30 +279,29 @@
         .attr("y2", y(0))
         .attr("stroke", "green")
 
-
     // circles, replace with image
     svg.selectAll("mycircle")
     .data(data)
     .enter()
     .append("svg:image")
-        .attr("xlink:href", "images/rose.png") 
+        .attr("xlink:href", function(d) { 
+            return d.Gender === "M" ? "images/rose-male.png" : "images/rose.png"; 
+        })
         .attr("width", 20) 
         .attr("height", 20) 
-        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
-        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
+        .attr("x", function(d) { return x(d.Year) - 10; }) 
+        .attr("y", function(d) { return y(d.Number) - 10; }) 
         .attr("preserveAspectRatio", "none");
 
     })
-
 </script>
 
-    <p class="dropcap">The variation “Rosie” <img src="images/rosie.png" width="15" height="15"> has also seen growing popularity in the past two decades. Meanwhile, “Rosa” <img src="images/rosa.png" width="15" height="15"> slowly declined in the late 1990s and at the turn of the new millennium before steadying in the 2010s. The variation was also recorded for a few male babies in 1997, 1999, 2000, 2002, and 2003. &bull;</p>
+    <p class="dropcap">The variation “Rosie” <img src="images/rosie.png" width="15" height="15"> has also seen growing popularity in the past two decades. On the contrary, “Rosa” <img src="images/rosa.png" width="15" height="15">, which was quite popular in the late 1990s slowly declined at the turn of the new millennium before steadying in the 2010s. The variation was also recorded for a few male babies <img src="images/rosa-male.png" width="15" height="15"> in 1997, 1999, 2000, 2002, and 2003. &bull;</p>
 
 <!-- div for d3 graph -->
 <center><div id="other_roses"></div></center>
 
 <script>
-
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 90, left: 40},
         width = 600 - margin.left - margin.right,
@@ -318,8 +316,12 @@
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
+    // create groups for better layering control
+    var linesGroup = svg2.append("g").attr("class", "lines");
+    var imagesGroup = svg2.append("g").attr("class", "images");
+
     // parse the data
-    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rosie-totals.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/refs/heads/main/data/rosa-totals.csv", function(data) {
 
     // X axis
     var x = d3.scaleBand()
@@ -341,7 +343,7 @@
     .call(d3.axisLeft(y));
 
     // lines
-    svg2.selectAll("myline")
+    linesGroup.selectAll(".rosa-line")
     .data(data)
     .enter()
     .append("line")
@@ -351,69 +353,68 @@
         .attr("y2", y(0))
         .attr("stroke", "green")
 
+    // circles, replace with image
+    imagesGroup.selectAll(".rosa-circle")
+    .data(data)
+    .enter()
+    .append("svg:image")
+        .attr("xlink:href", function(d) { 
+            return d.Gender === "M" ? "images/rosa-male.png" : "images/rosa.png"; 
+        })
+        .attr("width", 20) 
+        .attr("height", 20) 
+        .attr("x", function(d) { return x(d.Year) - 10; }) 
+        .attr("y", function(d) { return y(d.Number) - 10; }) 
+        .attr("preserveAspectRatio", "none");
+
+    })
+
+    // parse the data
+    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/refs/heads/main/data/rosie-totals.csv", function(data) {
+
+    // X axis
+    var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(data.map(function(d) { return d.Year; }))
+    .padding(1);
+    svg2.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    // Y axis
+    var y = d3.scaleLinear()
+    .domain([0, 1500])
+    .range([ height, 0]);
+    svg2.append("g")
+    .call(d3.axisLeft(y));
+
+    // lines
+    linesGroup.selectAll(".rosie-line")
+    .data(data)
+    .enter()
+    .append("line")
+        .attr("x1", function(d) { return x(d.Year); })
+        .attr("x2", function(d) { return x(d.Year); })
+        .attr("y1", function(d) { return y(d.Number); })
+        .attr("y2", y(0))
+        .attr("stroke", "green")
 
     // circles, replace with image
-    svg2.selectAll("mycircle")
+    imagesGroup.selectAll(".rosie-circle")
     .data(data)
     .enter()
     .append("svg:image")
         .attr("xlink:href", "images/rosie.png") 
         .attr("width", 20) 
         .attr("height", 20) 
-        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
-        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
+        .attr("x", function(d) { return x(d.Year) - 10; }) 
+        .attr("y", function(d) { return y(d.Number) - 10; }) 
         .attr("preserveAspectRatio", "none");
 
     })
-
-    // parse the data
-    d3.csv("https://raw.githubusercontent.com/cmgsalazar/baby-names/main/rosa-totals.csv", function(data) {
-
-    // X axis
-    var x = d3.scaleBand()
-    .range([ 0, width ])
-    .domain(data.map(function(d) { return d.Year; }))
-    .padding(1);
-    svg2.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x))
-    .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-45)")
-        .style("text-anchor", "end");
-
-    // Y axis
-    var y = d3.scaleLinear()
-    .domain([0, 1500])
-    .range([ height, 0]);
-    svg2.append("g")
-    .call(d3.axisLeft(y));
-
-    // lines
-    svg2.selectAll("myline")
-    .data(data)
-    .enter()
-    .append("line")
-        .attr("x1", function(d) { return x(d.Year); })
-        .attr("x2", function(d) { return x(d.Year); })
-        .attr("y1", function(d) { return y(d.Number); })
-        .attr("y2", y(0))
-        .attr("stroke", "green")
-
-
-    // circles, replace with image
-    svg2.selectAll("mycircle")
-    .data(data)
-    .enter()
-    .append("svg:image")
-        .attr("xlink:href", "images/rosa.png") 
-        .attr("width", 20) 
-        .attr("height", 20) 
-        .attr("x", function(d) { return x(d.Year) - 10; }) // Adjust positioning relative to x scale
-        .attr("y", function(d) { return y(d.Number) - 10; }) // Adjust positioning relative to y scale
-        .attr("preserveAspectRatio", "none");
-
-    })
-
 </script>
 </div>
 
