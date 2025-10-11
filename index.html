@@ -7,240 +7,108 @@
     <title>Cherry Salazar | Journalist</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="canonical" href="http://cmgsalazar.github.io/">
 
     <meta property="og:title" content="Cherry Salazar | Journalist">
-    <meta property="og:description" content="Cherry Salazar is a journalist currently based in New York City, specializing in investigations, data, and multimedia.">
+    <meta property="og:description" content="Cherry Salazar is a New York City-based journalist, specializing in investigations, data, and multimedia.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/marawi.png">
+    <meta property="og:image" content="assets/marawi.png">
 
-    <!-- Google Fonts: Libre Franklin, Merriweather, Roboto, Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wght@300..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <section id="navigation">
+        <div class="navbar">
+            <nav class="navbar-name">
+                <a href="#" class="home-link">Cherry Salazar</a> <i>(she/her)</i> 
+            </nav>
 
-    <!-- NAVIGATION -->
-    <button id="menu-toggle">☰</button>
-    <div class="navbar">
-        <nav class="navbar-name">
-            <a href="#" class="home-link"><b>Cherry Salazar</b></a> <i>(she/her)</i> 
-        </nav>
-        <nav class="socmed-links">
-            <!-- Logos from flaticon.com (Freepik, riajulislam, and Dave Gandy) -->
-            <ul>
-                <!-- <li><a href="#"><img src="images/logos/home.png" class="zoom-in"></a></li> -->
-                <li><a href="mailto:cmgsalazar@proton.me"><img src="images/logos/email.png" class="zoom-in socmed-links" alt="cmgsalazar at proton dot me"></a></li>
-                <li><a href="https://github.com/cmgsalazar/" target="_blank"><img src="images/logos/github.png" class="zoom-in socmed-links" alt="Github"></a></li>
-                <li><a href="https://www.linkedin.com/in/cmgsalazar" target="_blank"><img src="images/logos/linkedin.png" class="zoom-in socmed-links" alt="LinkedIn"></a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- PROFILE SECTION -->
-    <header>
-        <div class="title-container">
-            <h1>Hello! <span class="shake">👋🏻</span> My name is <span class="bio-name">Cherry&nbsp;Salazar</span>. </h1>
-            <h4>I am a New York-based <span class="highlight-investigative">investigative</span> journalist, <br>specializing in <span class="highlight-data">data-driven</span> and <span class="highlight-reporting">multimedia</span>&nbsp;reporting. </h4>
-            <!-- COLOR THE "highlighted" texts so the color theme makes sense throughout the page -->
+            <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="var(--light)" stroke="var(--red)" stroke-width="2"/>
+            <path class="initials" d="M18.45 55.35Q12.75 55.35 8.58 52.80Q4.40 50.25 2.20 45.98Q0 41.70 0 36.55Q0 31.10 2.38 26.80Q4.75 22.50 9.05 20.08Q13.35 17.65 18.80 17.65Q21.25 17.65 23.38 18.18Q25.50 18.70 26.90 19.38Q28.30 20.05 28.75 20.50L26.30 25.50Q23.25 22.80 18.35 22.80Q14.90 22.80 12.10 24.50Q9.30 26.20 7.70 29.35Q6.10 32.50 6.10 36.65Q6.10 40.45 7.53 43.55Q8.95 46.65 11.70 48.45Q14.45 50.25 18.25 50.25Q22.65 50.25 26.75 47.75L28.40 52.50Q27.30 53.50 24.38 54.43Q21.45 55.35 18.45 55.35ZM42.65 55.50Q39.65 55.50 36.70 54.45Q33.75 53.40 32.45 52.10L35.10 47.35Q36.15 48.30 38.38 49.33Q40.60 50.35 42.65 50.35Q45.30 50.35 46.98 49.10Q48.65 47.85 48.65 45.65Q48.65 43.95 47.75 42.70Q46.85 41.45 45.55 40.63Q44.25 39.80 41.85 38.60Q39.00 37.20 37.95 36.50Q33.10 33.25 33.10 27.50Q33.10 22.75 36.25 20.23Q39.40 17.70 44.20 17.70Q49.35 17.70 52.95 20.65L50.30 25.20Q49.35 24.20 47.63 23.48Q45.90 22.75 43.95 22.75Q41.45 22.75 40.03 23.88Q38.60 25.00 38.60 27.20Q38.60 28.75 39.50 29.98Q40.40 31.20 41.78 32.10Q43.15 33.00 45.50 34.30Q47.75 35.55 48.95 36.28Q50.15 37.00 51.20 38.00Q52.65 39.30 53.55 41.10Q54.45 42.90 54.45 45.05Q54.45 48.40 52.93 50.75Q51.40 53.10 48.73 54.30Q46.05 55.50 42.65 55.50Z" fill="var(--dark)" transform="translate(22.5, 13)" stroke-dasharray="988.00 988.00" stroke-dashoffset="988.00">
+            </svg>
+        
+            <nav class="socmed-links">
+                <!-- logos from flaticon.com (Freepik, riajulislam, and Dave Gandy) -->
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/cmgsalazar" target="_blank"><img src="assets/logos/linkedin.png" class="zoom-in socmed-links" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/cmgsalazar/" target="_blank"><img src="assets/logos/github.png" class="zoom-in socmed-links" alt="Github"></a></li>
+                    <li><a href="mailto:cmgsalazar@proton.me"><img src="assets/logos/email.png" class="zoom-in socmed-links"></a></li>
+                </ul>
+            </nav>
         </div>
+    </section>
 
-        <!-- BIO -->
+    <section id="profile">
         <div class="bio-container">
-            <div class="column profile-photo"> 
+            <div class="column profile-photo">
+                <h1 id="hi">hello.</h1>
                 <div class="flip-card">
                     <figure class="card-front">
-                        <img src="images/headshot.jpg"> 
+                        <img src="assets/headshot.jpg" id="headshot"> 
                     </figure>
                     <figure class="card-back">
-                        <img src="images/marawi.jpg">
+                        <img src="assets/marawi.jpg">
                         <figcaption>Siege of Marawi, southern Philippines, 2017 <span class="credit">(Photo by Jojo Secson)</span></figcaption>
                     </figure>
                 </div>
-                <!-- <div class="profile-sections">
-                    <button class="works" onclick="loadContent('section1')">Select Works</button>
-                    <button class="awards" onclick="loadContent('section2')">Awards</button>
-                    <button class="awards" onclick="loadContent('section3')">Bio</button>
-                </div> -->
+            </div>
+            <div class="column profile-bio">
+                <h4><span class="typeriter">My name is <span class="bio-name">Cherry&nbsp;Salazar</span>.&nbsp;<span class="shake">👋🏻</span></span></h4>
+                <p>I am a New York-based <span class="highlight-investigation">investigative</span> journalist, <br>specializing in <span class="highlight-data">data-driven</span> and <span class="highlight-reporting">multimedia</span>&nbsp;reporting. </p>
+                <p>Signal: @cmgsalazar.01</p>
             </div>
 
             <div class="column profile-text">
-                <p class="bio">I am currently pursuing M.A. in Journalism at the <a href="https://www.journalism.cuny.edu/" target="_blank" class="data">Craig&nbsp;Newmark Graduate School of Journalism</a>, where I&nbsp;founded and serve as the first president of the <a href="https://www.ire.org/" target="_blank" class="investigative">Investigative Reporters and Editors (IRE)</a> pilot student chapter. I&nbsp;am also an alumna of <a href="https://ledeprogram.com/" target="_blank" class="data">Columbia&nbsp;University’s Lede Program for Data Journalists</a>. </p>
+                <h5>Currently</h5>
+                <p class="bio">I analyze and visualize data for <a href="https://civicnews.org/" target="_blank" class="data">Civic News Company</a>, where I collaborate with national and local reporters on <a href="https://chalkbeat.org" target="_blank" class="reporting">education</a>, <a href="https://votebeat.org" target="_blank" class="reporting">elections</a>, and <a href="https://healthbeat.org" target="_blank" class="reporting">public health</a> stories. I am also pursuing M.A. in Journalism at the <a href="https://www.journalism.cuny.edu/" target="_blank" class="data">Craig&nbsp;Newmark Graduate School of Journalism</a>, where I&nbsp;founded and serve as the first president of the <a href="https://www.ire.org/new-student-chapters-on-college-campuses/" target="_blank" class="investigation">Investigative Reporters and Editors (IRE)</a> pilot and graduate-only student chapter. </p>
                     
-                <p class="bio">Previously, I worked as the sole multimedia reporter of nonprofit newsroom <a href="https://pcij.org/" target="_blank" class="investigative">Philippine Center for Investigative Journalism</a> where I covered elections, disinformation, energy transition, and attacks on press freedom, among others. I&nbsp;also produced television documentaries for <a href="https://www.abs-cbn.com/" target="_blank" class="documentary">ABS-CBN</a>, the largest media network in the Philippines at the time until it was forced off the air by the Duterte administration in 2020. </p>
+                <h5>Previously</h5>
+                <p class="bio">At nonprofit newsroom <a href="https://pcij.org/author/cherry-salazar/" target="_blank" class="investigation">Philippine Center for Investigative Journalism</a>, I covered elections (campaign finance, procurement, and disinformation), energy transition, and attacks on press freedom. As the orgaization’s sole multimedia reporter, I also created graphics, short documentaries, podcasts, and social media templates. Before that, I&nbsp;produced award-winning documentaries for <a href="https://www.abs-cbn.com/" target="_blank" class="documentary">ABS-CBN Corporation</a>, the Philippines’ largest media network until it was forced off the air by the Duterte administration in&nbsp;2020. </p>
                 
-                <p class="bio">In 2022, I&nbsp;was invited by the U.S. State Department to participate in the <a href="https://eca.state.gov/highlight/edward-r-murrow-program-journalists" target="_blank" class="reporting">Edward&nbsp;R.&nbsp;Murrow Program for Journalists</a> as part of its premier professional exchange program. I&nbsp;also contributed to the <a href="https://gijn.org/" target="_blank" class="investigative">Global Investigative Journalism Network</a>’s guide on <a href="https://gijn.org/resource/guide-introduction-investigative-journalism/" target="_blank" class="reporting">investigative reporting</a>. </p>
+                <h5>Elsewhere</h5>
+                <p class="bio"><a href="https://www.theguardian.com/environment/2025/sep/27/meat-gas-emissions-reporting" target="_blank" class="data">The Guardian</a> covered my <a href="https://sentientmedia.org/climate-news-analysis/" target="_blank" class="data">Sentient Media</a> analysis about the dearth of animal agriculture coverage in climate reporting. Likewise, my reporting in Manila was featured in the <a href="https://gijn.org/" target="_blank" class="investigation">Global Investigative Journalism Network</a>’s guide on <a href="https://gijn.org/resource/guide-introduction-investigative-journalism/" target="_blank" class="reporting">investigative reporting</a>. I&nbsp;was also recently invited as a judge for this year’s <a href="https://www.linkedin.com/posts/aib-association-for-international-broadcasting_meet-the-aibs-2025-judges-as-we-draw-closer-activity-7363878877808447488-6-S5" target="_blank" class="documentary">Association of International Broadcasting (AIB) Awards</a>. </p>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="works-container">
-        <!-- <h2>Select work</h2> -->
-        <div class="portfolio-grid">
-            <div class="portfolio-item data">
-                <a href="https://github.com/cmgsalazar/us-elex-official-results" target="_blank">
-                <img src="images/bx-elections.gif" alt="Map of how Bronxites voted in the elections">
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Personal project</span> Aftershocks | Shifting voting patterns: Trending towards purple</div>
-                    <div class="portfolio-category">Elections &bull; Python, GIS </div>
-                </div>
+    <main>
+        <div class="works-container">
+            <div class="tabs">
+                <button class="button" data-filter="all">All</button>
+                <button class="button active" data-filter="featured">Featured</button>
+                <button class="button" data-filter="data graphics">Data + Graphics</button>
+                <button class="button" data-filter="investigation">Investigations</button>
+                <button class="button" data-filter="documentary">Documentaries</button>
+                <button class="button" data-filter="miscellaneous">Misc.</button>
             </div>
+            <!-- <h3>Work I’m proud of</h3> -->
+        </div>
 
-            <div class="portfolio-item data">
-                <a href="https://cmgsalazar.github.io/newmarkj/illegal-dumping" target="_blank">
-                <img src="images/illegal-dumping.jpg" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Mott Haven Herald</span> BID wants more cameras in The Hub to curb illegal dumping</div>
-                    <div class="portfolio-category">Local Accountability &bull; Python, GIS &bull; Multimedia </div>
-                </div>
-            </div>
-        
-            <div class="portfolio-item investigative">
-                <a href="https://pcij.org/2022/05/04/what-happened-to-comelecs-voter-verification-project-in-2019/" target="_blank">
-                <img src="images/vrvm.jpg" alt="VRVM malfunction caused long queues in Dansalan, Marawi City in the May 2019 midterm polls">
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span> Down the drain: What happened to Comelec’s ₱1B voter verification project? </div>
-                    <div class="portfolio-category">Elections &bull; Government Procurement</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item documentary">
-                <a href="https://www.youtube.com/watch?v=_CEwRE2ZYXA" target="_blank">
-                <img src="images/fedelina.jpg" alt="Fedelina Lugasan">
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">ABS-CBN</span> Fedelina: A Stolen Life</div>
-                    <div class="portfolio-category">Trafficking &bull; Cross-border &bull; Documentary</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item investigative">
-                <a href="https://www.philstar.com/headlines/climate-and-environment/2023/03/07/2249961/verde-island-passage-danger-lng-projects-flock-batangas" target="_blank">
-                <img src="images/pcij-vip.jpg" alt="Power plant expansions in Ilijan, Batangas City">
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span> Verde Island Passage in danger as LNG projects flock to Batangas </div> <!-- ADD FIRST OF A SERIES -->
-                    <div class="portfolio-category">Environment &bull; Climate &bull; Energy Transition &bull; Multimedia</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item reporting">
-                <a href="https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/" target="_blank">
-                <img src="images/covid-water-access.jpg" alt="As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford">
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span>Pandemic underscores struggles of Manila’s urban poor communities without access to clean water</div>
-                    <div class="portfolio-category">Health &bull; Multimedia</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item investigative">
-                <a href="https://pcij.org/article/10418/ofws-are-harassed-jessica-got-jail-time-over-loans-theyre-forced-to-make-to-get-jobs-abroad" target="_blank">
-                <img src="images/ofw-debt.jpg" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span> OFWs are harassed — Jessica got jail time — over loans they’re forced to make to get jobs abroad</div>
-                    <div class="portfolio-category">Labor and Migration &bull; Cross-border</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item data">
-                <a href="https://cmgsalazar.github.io/lede/nyc-hate-crimes/" target="_blank">
-                <img src="images/hate-crimes.png" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Personal project</span> Jews, Asians, gays most targeted for hate crimes: NYPD data</div>
-                    <div class="portfolio-category">Crimes &bull; Python </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item documentary">
-                <a href="https://www.youtube.com/watch?v=1V4XTg5x_Xw" target="_blank">
-                <img src="images/hiv-rising.jpg" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">ABS-CBN</span> HIV Rising</div>
-                    <div class="portfolio-category">Health &bull; Cross-border</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item reporting">
-                <a href="https://open.spotify.com/episode/3TNiThKNhtE5MXvnAHCkZ9" target="_blank">
-                <img src="images/osaec.jpg" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span>Online child sex abuse surges during pandemic</div>
-                    <div class="portfolio-category">Trafficking &bull; Digital Crimes &bull; Multimedia</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item reporting">
-                <a href="https://pcij.org/2022/05/08/marcos-presidential-elections-massive-disinformation/" target="_blank">
-                <img src="images/marcos.jpg" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Philippine Center for Investigative Journalism</span>Marcos leads presidential race amid massive disinformation</div>
-                    <div class="portfolio-category">Elections &bull; Disinformation &bull; Multimedia</div>
-                </div>
-            </div>
-
-            <div class="portfolio-item data">
-                <a href="https://cmgsalazar.github.io/lede/climate-change-funding/" target="_blank">
-                <img src="images/china-aid.png" alt=""> <!-- ALT TK -->
-                </a>
-                <div class="portfolio-info">
-                    <div class="portfolio-title"><span class="portfolio-link">Personal project</span> China, a top lender, still receives billions in aid</div>
-                    <div class="portfolio-category">Development Finance &bull; Python, Scrollama </div>
-                </div>
-            </div>
+        <div class="portfolio-grid"></div>
     </main>
 
     <footer>
         <div class="footer-container socmed-links">
-            <a href="mailto:cmgsalazar@proton.me"><img src="images/logos/email.png" class="zoom-in socmed-links" alt="cmgsalazar at proton dot me"></a>
-            <a href="https://github.com/cmgsalazar/" target="_blank"><img src="images/logos/github.png" class="zoom-in socmed-links" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/cmgsalazar" target="_blank"><img src="images/logos/linkedin.png" class="zoom-in socmed-links" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/cmgsalazar" target="_blank"><img src="assets/logos/linkedin.png" class="zoom-in socmed-links" alt="LinkedIn"></a>
+            <a href="https://github.com/cmgsalazar/" target="_blank"><img src="assets/logos/github.png" class="zoom-in socmed-links" alt="Github"></a>
+            <a href="mailto:cmgsalazar@proton.me"><img src="assets/logos/email.png" class="zoom-in socmed-links"></a>
         </div>
     </footer>
 
     <button id="back-to-top" title="Back to top">↑</button>
 
-    <script>
-        // back-to-top button functionality
-        const backToTopButton = document.getElementById("back-to-top");
+    <script src="functions.js"></script>
+    <script type="module" src="renderPortfolio.js"></script>
 
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        };
-
-        backToTopButton.onclick = function() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        };
-
-        // mobile menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const nav = document.querySelector('nav');
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        });
-    </script>
-
-    
 </body>
 </html>
