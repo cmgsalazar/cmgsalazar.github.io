@@ -59,18 +59,6 @@
         "category": "breaking",
         "subject": [ "business & economy", "government" ]
     },
-    {
-        "title": "Fedelina: A Stolen Life",
-        "publisher": "ABS-CBN DocuCentral",
-        "img_src": "assets/fedelina.jpg",
-        "img_alt": "Fedelina Lugasan",
-        "link": "https://www.youtube.com/watch?v=_CEwRE2ZYXA",
-        "description": "",
-        "featured": true,
-        "type": [ "documentary" ],
-        "category": "documentary",
-        "subject": [ "trafficking", "cross-border" ]
-    },
     { 
         "title": "Structural challenges, market uncertainties cloud office-to-residential conversions in D.C.",
         "publisher": "Issue Number One",
@@ -78,7 +66,7 @@
         "img_alt": "",
         "link": "https://issuenumberone.journalism.cuny.edu/2025/08/24/structural-challenges-market-uncertainties-cloud-office-to-residential-conversions-in-d-c/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "graphic", "miscellaneous" ],
         "category": "enterprise",
         "subject": [ "business & economy" ]
@@ -96,16 +84,16 @@
         "subject": [ "elections", "money & politics" ]
     },
     {
-        "title": "Shifting voting patterns in the Bronx: Trending towards purple",
-        "publisher": "Personal project",
-        "img_src": "assets/bx-elections.gif",
-        "img_alt": "Map of how Bronxites voted in the elections",
-        "link": "https://github.com/cmgsalazar/us-elex-official-results",
+        "title": "Wildland firefighters struggle to find homes to call their own",
+        "publisher": "Issue Number One",
+        "img_src": "assets/wildland-firefighters.jpg",
+        "img_alt": "",
+        "link": "https://issuenumberone.journalism.cuny.edu/2025/03/31/wildland-firefighters-struggle-to-find-homes-to-call-their-own/",
         "description": "",
         "featured": true,
-        "type": [ "data", "graphic" ],
-        "category": "interactive",
-        "subject": [ "elections" ]
+        "type": [ "data", "miscellaneous" ],
+        "category": "enterprise",
+        "subject": [ "business & economy", "labor & employment", "climate" ]
     },
     { 
         "title": "Melrose residents urge EPA to step in on Superfund site cleanup",
@@ -120,16 +108,28 @@
         "subject": ["local accountability", "environment", "health" ]
     },
     {
-        "title": "Wildland firefighters struggle to find homes to call their own",
-        "publisher": "Issue Number One",
-        "img_src": "assets/wildland-firefighters.jpg",
-        "img_alt": "",
-        "link": "https://issuenumberone.journalism.cuny.edu/2025/03/31/wildland-firefighters-struggle-to-find-homes-to-call-their-own/",
+        "title": "Fedelina: A Stolen Life",
+        "publisher": "ABS-CBN DocuCentral",
+        "img_src": "assets/fedelina.jpg",
+        "img_alt": "Fedelina Lugasan",
+        "link": "https://www.youtube.com/watch?v=_CEwRE2ZYXA",
         "description": "",
         "featured": true,
-        "type": [ "data", "miscellaneous" ],
-        "category": "enterprise",
-        "subject": [ "business & economy", "labor & employment", "climate" ]
+        "type": [ "documentary" ],
+        "category": "documentary",
+        "subject": [ "trafficking", "cross-border", "labor & employment" ]
+    },
+    {
+        "title": "Shifting voting patterns in the Bronx: Trending towards purple",
+        "publisher": "Personal project",
+        "img_src": "assets/bx-elections.gif",
+        "img_alt": "Map of how Bronxites voted in the elections",
+        "link": "https://github.com/cmgsalazar/us-elex-official-results",
+        "description": "",
+        "featured": true,
+        "type": [ "data", "graphic" ],
+        "category": "interactive",
+        "subject": [ "elections" ]
     },
     {
         "title": "BID wants more cameras in The Hub to curb illegal dumping",
@@ -179,18 +179,6 @@
         "category": "podcast",
         "subject": [ "trafficking", "government" ]
     },
-    { 
-        "title": "The last fishermen of Ilijan",
-        "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/ilijan.jpg",
-        "img_alt": "",
-        "link": "https://pcij.org/2023/03/09/the-last-fishermen-of-ilijan/",
-        "description": "",
-        "featured": true,
-        "type": [ "data", "investigation" ],
-        "category": "investigative",
-        "subject": [ "labor & employment", "environment", "energy", "health" ]
-    },
     {
         "title": "Verde Island Passage in danger as LNG projects flock to Batangas",
         "publisher": "Philippine Center for Investigative Journalism",
@@ -204,13 +192,25 @@
         "subject": [ "environment", "energy", "climate" ]
     },
     { 
+        "title": "The last fishermen of Ilijan",
+        "publisher": "Philippine Center for Investigative Journalism",
+        "img_src": "assets/ilijan.jpg",
+        "img_alt": "",
+        "link": "https://pcij.org/2023/03/09/the-last-fishermen-of-ilijan/",
+        "description": "",
+        "featured": true,
+        "type": [ "data", "investigation" ],
+        "category": "investigative",
+        "subject": [ "labor & employment", "environment", "energy", "health" ]
+    },
+    { 
         "title": "Fisherfolk in Batangas go against the tide",
         "publisher": "Philippine Center for Investigative Journalism",
         "img_src": "assets/ilijan-fisher.jpg",
         "img_alt": "",
         "link": "https://pcij.org/2023/03/09/fisherfolk-in-batangas-go-against-the-tide/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "investigation", "miscellaneous" ],
         "category": "feature",
         "subject": [ "labor & employment", "energy", "environment" ]
@@ -222,22 +222,10 @@
         "img_alt": "",
         "link": "https://pcij.org/2023/03/11/liquefied-natural-gas-a-dirty-costly-detour/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "investigation" ],
         "category": "investigative",
         "subject": [ "energy", "environment", "climate", "government" ]
-    },
-    { 
-        "title": "<i>‘Di Ka Pasisiil</i> (Never Shall Be Conquered)",
-        "publisher": "ABS-CBN DocuCentral",
-        "img_src": "assets/dkp.jpg",
-        "img_alt": "",
-        "link": "https://vimeo.com/448123178",
-        "description": "",
-        "featured": true,
-        "type": [ "documentary"],
-        "category": "documentary" ,
-        "subject": [ "conflict" ]
     },
     {
         "title": "Marcos leads presidential race amid massive disinformation",
@@ -252,16 +240,52 @@
         "subject": [ "elections", "disinformation", "press freedom" ]
     },
     { 
+        "title": "<i>‘Di Ka Pasisiil</i> (Never Shall Be Conquered)",
+        "publisher": "ABS-CBN DocuCentral",
+        "img_src": "assets/dkp.jpg",
+        "img_alt": "",
+        "link": "https://vimeo.com/448123178",
+        "description": "",
+        "featured": true,
+        "type": [ "documentary"],
+        "category": "documentary" ,
+        "subject": [ "conflict" ]
+    },
+    { 
+        "title": "As elections near, press freedom and media take a beating",
+        "publisher": "Philippine Center for Investigative Journalism &bull; Esquire Philippines",
+        "img_src": "assets/pressfreedom.jpg",
+        "img_alt": "",
+        "link": "https://www.esquiremag.ph/politics/news/press-freedom-alarm-pcij-a2726-20220318-lfrm2",
+        "description": "",
+        "featured": true,
+        "type": [ "miscellaneous" ],
+        "category":"enterprise",
+        "subject": [ "press freedom", "elections", "government" ]
+    },
+    { 
         "title": "Moneyed kin, personal coffers paved Senate victories in 2022",
         "publisher": "Philippine Center for Investigative Journalism",
         "img_src": "assets/moneyed-kin.jpg",
         "img_alt": "",
         "link": "https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "investigation" ],
         "category": "investigative",
         "subject": [ "elections", "money & politics" ]
+    },
+    { 
+        "title": "<i>Mukha: Eskwela</i> (Faces: Learners)",
+        "publisher": "ABS-CBN DocuCentral",
+        "img_src": "assets/eskwela.jpg",
+        "img_alt": "",
+        "link": "https://www.youtube.com/watch?v=uUuTyYK6t7U",
+        "description": "",
+        "featured": true,
+        "type": [ "documentary"],
+        "category": "documentary" ,
+        "subject": [ "education", "health" ]
     },
     { 
         "title": "Votes in 2023 BSKE sold up to P40K; Comelec urged to see prosecution of vote-buying cases through",
@@ -270,7 +294,7 @@
         "img_alt": "",
         "link": "https://pcij.org/2023/10/31/comelec-urged-to-see-prosecution-of-vote-buying-cases-through/",
         "description": "",
-        "featured": false,
+        "featured": true,
         "type": [ "investigation" ],
         "category": "enterprise",
         "subject": [ "elections", "money & politics" ]
@@ -294,7 +318,7 @@
         "img_alt": "",
         "link": "https://pcij.org/2022/11/23/ampatuan-massacre-kin-if-justice-were-served-percy-lapid-wouldnt-have-been-killed/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "miscellaneous" ],
         "category": "enterprise",
         "subject": [ "press freedom", "government" ]
@@ -310,18 +334,6 @@
         "type": [ "documentary" ],
         "category": "documentary",
         "subject": [ "health", "government", "cross-border" ]
-    },
-    { 
-        "title": "<i>Mukha: Eskwela</i> (Faces: Learners)",
-        "publisher": "ABS-CBN DocuCentral",
-        "img_src": "assets/eskwela.jpg",
-        "img_alt": "",
-        "link": "https://www.youtube.com/watch?v=uUuTyYK6t7U",
-        "description": "",
-        "featured": true,
-        "type": [ "documentary"],
-        "category": "documentary" ,
-        "subject": [ "education", "health" ]
     },
     {
         "title": "Jews, Asians, gays most targeted for hate crimes: NYPD data",
