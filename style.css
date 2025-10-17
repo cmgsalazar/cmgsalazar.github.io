@@ -660,6 +660,10 @@ main {
 
 /* small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 767px) {
+    body {
+        font-size: 20px;
+    }
+
     main {
         margin: 0 5%;
     }
@@ -815,4 +819,3 @@ main {
         }
     }
 }
-
