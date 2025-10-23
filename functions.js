@@ -11,8 +11,16 @@ window.onscroll = function() {
 
 backToTopButton.onclick = function() {
     document.body.scrollTop = 0; // Safari
-    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, and Opera
 };
+
+// add widont functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll("p.bio");
+    elements.forEach(function(el) {
+        el.innerHTML = widont(el.innerHTML, "html", 2);
+    });
+});
 
 // mobile menu toggle
 const menuToggle = document.getElementById("menu-toggle");
@@ -27,4 +35,15 @@ document.addEventListener("click", (e) => {
     if (!menuToggle.contains(e.target) && !tabs.contains(e.target)) {
         tabs.classList.remove("show");
     }
+});
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+    })
+})
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        tabs.classList.remove("show");
+    });
 });

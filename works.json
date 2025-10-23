@@ -5,7 +5,7 @@
         "img_src": "assets/self-care.jpg",
         "img_alt": "Illustration of a person lying in bed with their hand over their forehead",
         "link": "https://cmgsalazar.github.io/self-check-in/",
-        "description": "",
+        "description": "An interactive quiz dedicated to my late sister, Maricel, that was based on <a href=\"https://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to\" target=\"_blank\">a self-care questionnaire</a> published in 2015",
         "featured": true,
         "type": [ "data", "graphic" ],
         "category": "interactive",
@@ -29,7 +29,7 @@
         "img_src": "assets/animal-ag.png",
         "img_alt": "",
         "link": "https://sentientmedia.org/climate-news-analysis/",
-        "description": "",
+        "description": "Published during the <b>2025 NYC Climate Week</b> and covered by <a href=\"https://www.theguardian.com/environment/2025/sep/27/meat-gas-emissions-reporting\" target=\"_blank\">The Guardian</a>",
         "featured": true,
         "type": [ "data", "graphic" ],
         "category": "analysis",
@@ -72,18 +72,6 @@
         "subject": [ "business & economy" ]
     },
     {
-        "title": "Down the drain: What happened to Comelec’s ₱1B voter verification project?",
-        "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/vrvm.jpg",
-        "img_alt": "VRVM malfunction caused long queues in Dansalan, Marawi City in the May 2019 midterm polls",
-        "link": "https://pcij.org/2022/05/04/what-happened-to-comelecs-voter-verification-project-in-2019/",
-        "description": "",
-        "featured": true,
-        "type": [ "investigation" ],
-        "category": "investigative",
-        "subject": [ "elections", "money & politics" ]
-    },
-    {
         "title": "Wildland firefighters struggle to find homes to call their own",
         "publisher": "Issue Number One",
         "img_src": "assets/wildland-firefighters.jpg",
@@ -108,18 +96,6 @@
         "subject": ["local accountability", "environment", "health" ]
     },
     {
-        "title": "Fedelina: A Stolen Life",
-        "publisher": "ABS-CBN DocuCentral",
-        "img_src": "assets/fedelina.jpg",
-        "img_alt": "Fedelina Lugasan",
-        "link": "https://www.youtube.com/watch?v=_CEwRE2ZYXA",
-        "description": "",
-        "featured": true,
-        "type": [ "documentary" ],
-        "category": "documentary",
-        "subject": [ "trafficking", "cross-border", "labor & employment" ]
-    },
-    {
         "title": "Shifting voting patterns in the Bronx: Trending towards purple",
         "publisher": "Personal project",
         "img_src": "assets/bx-elections.gif",
@@ -137,11 +113,23 @@
         "img_src": "assets/illegal-dumping.jpg",
         "img_alt": "Illegal dumping in The Hub neighborhood",
         "link": "https://cmgsalazar.github.io/newmarkj/illegal-dumping",
-        "description": "",
+        "description": "Featured in the BronxNet’s <a href=\"https://www.youtube.com/watch?v=R_cB448ROUA\" target=\"_blank\">The Bronx Buzz</a>",
         "featured": false,
         "type": [ "data", "miscellaneous" ],
         "category": "multimedia",
         "subject": [ "local accountability", "environment" ]
+    },
+    {
+        "title": "Fedelina: A Stolen Life",
+        "publisher": "ABS-CBN DocuCentral",
+        "img_src": "assets/fedelina.jpg",
+        "img_alt": "Fedelina Lugasan",
+        "link": "https://www.youtube.com/watch?v=_CEwRE2ZYXA",
+        "description": "Won the Silver World Medal at the <b>2021 New York Festivals International TV and Film Awards</b> and Best Documentary Program (national winner) at the <b>2021 Asian Academy Awards</b>",
+        "featured": true,
+        "type": [ "documentary" ],
+        "category": "documentary",
+        "subject": [ "trafficking", "cross-border", "labor & employment" ]
     },
     {
         "title": "OFWs are harassed — Jessica got jail time — over loans they’re forced to make to get jobs abroad",
@@ -150,22 +138,22 @@
         "img_alt": "Overseas Filipino workers facing harassment over forced loans",
         "link": "https://pcij.org/article/10418/ofws-are-harassed-jessica-got-jail-time-over-loans-theyre-forced-to-make-to-get-jobs-abroad",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "investigation" ],
         "category": "investigative",
         "subject": [ "labor & employment", "government", "cross-border" ]
     },
     {
-        "title": "Pandemic underscores struggles of Manila’s urban poor communities without access to clean water",
+        "title": "Down the drain: What happened to Comelec’s ₱1B voter verification project?",
         "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/covid-water-access.jpg",
-        "img_alt": "As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford",
-        "link": "https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/",
+        "img_src": "assets/vrvm.jpg",
+        "img_alt": "VRVM malfunction caused long queues in Dansalan, Marawi City in the May 2019 midterm polls",
+        "link": "https://pcij.org/2022/05/04/what-happened-to-comelecs-voter-verification-project-in-2019/",
         "description": "",
-        "featured": false,
-        "type": [ "miscellaneous" ],
-        "category": "multimedia",
-        "subject": [ "health" ]
+        "featured": true,
+        "type": [ "investigation" ],
+        "category": "investigative",
+        "subject": [ "elections", "money & politics" ]
     },
     {
         "title": "Online child sex abuse surges during pandemic",
@@ -190,6 +178,18 @@
         "type": [ "investigation", "graphic" ],
         "category": "investigative",
         "subject": [ "environment", "energy", "climate" ]
+    },
+    {
+        "title": "Pandemic underscores struggles of Manila’s urban poor communities without access to clean water",
+        "publisher": "Philippine Center for Investigative Journalism",
+        "img_src": "assets/covid-water-access.jpg",
+        "img_alt": "As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford",
+        "link": "https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/",
+        "description": "",
+        "featured": true,
+        "type": [ "miscellaneous" ],
+        "category": "multimedia",
+        "subject": [ "health", "labor & employment", "local accountability" ]
     },
     { 
         "title": "The last fishermen of Ilijan",
@@ -245,7 +245,7 @@
         "img_src": "assets/dkp.jpg",
         "img_alt": "",
         "link": "https://vimeo.com/448123178",
-        "description": "",
+        "description": "Bagged the Philippines’ first Gold Dolphin at the <b>2018 Cannes Corporate Media & TV Awards</b>; also won Gold World Medal in the <b>2018 New York Festivals International TV and Film Awards</b> and Best Documentary Special in the <b>2017 Philippine Movie Press Club Star Awards</b> and <b>Gawad Tanglaw Awards for TV</b>",
         "featured": true,
         "type": [ "documentary"],
         "category": "documentary" ,
@@ -253,12 +253,12 @@
     },
     { 
         "title": "As elections near, press freedom and media take a beating",
-        "publisher": "Philippine Center for Investigative Journalism &bull; Esquire Philippines",
+        "publisher": "Philippine Center for Investigative Journalism",
         "img_src": "assets/pressfreedom.jpg",
         "img_alt": "",
         "link": "https://www.esquiremag.ph/politics/news/press-freedom-alarm-pcij-a2726-20220318-lfrm2",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "miscellaneous" ],
         "category":"enterprise",
         "subject": [ "press freedom", "elections", "government" ]
@@ -270,10 +270,34 @@
         "img_alt": "",
         "link": "https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/",
         "description": "",
-        "featured": false,
+        "featured": true,
         "type": [ "data", "investigation" ],
         "category": "investigative",
         "subject": [ "elections", "money & politics" ]
+    },
+    { 
+        "title": "Potential bets start advertising on Facebook as 2022 campaign shifts to social media",
+        "publisher": "Philippine Center for Investigative Journalism",
+        "img_src": "assets/potential-bets.jpg",
+        "img_alt": "",
+        "link": "https://pcij.org/2021/05/11/potential-bets-start-advertising-on-facebook-as-2022-campaign-shifts-to-social-media/",
+        "description": "Best Data-driven Story (Philippines) at the <b>2021 ExcEl Award (Excellence in Election Reporting in Southeast Asia)</b>",
+        "featured": true,
+        "type": [ "data", "investigation" ],
+        "category": "analysis",
+        "subject": [ "elections", "money & politics" ]
+    },
+    { 
+        "title": "Sacred Showers",
+        "publisher": "Philippine Daily Inquirer (Youngblood)",
+        "img_src": "assets/youngblood.jpg",
+        "img_alt": "",
+        "link": "https://opinion.inquirer.net/146262/sacred-showers/",
+        "description": "",
+        "featured": false,
+        "type": [ "miscellaneous"],
+        "category": "essay" ,
+        "subject": [ ]
     },
     { 
         "title": "<i>Mukha: Eskwela</i> (Faces: Learners)",
@@ -281,20 +305,20 @@
         "img_src": "assets/eskwela.jpg",
         "img_alt": "",
         "link": "https://www.youtube.com/watch?v=uUuTyYK6t7U",
-        "description": "",
+        "description": "Finalist at the <b>2017 UNICEF Asia-Pacific Child Rights Award for Television</b>",
         "featured": true,
         "type": [ "documentary"],
         "category": "documentary" ,
         "subject": [ "education", "health" ]
     },
     { 
-        "title": "Votes in 2023 BSKE sold up to P40K; Comelec urged to see prosecution of vote-buying cases through",
+        "title": "Votes in 2023 BSKE sold up to ₱40K; Comelec urged to see prosecution of vote-buying cases through",
         "publisher": "Philippine Center for Investigative Journalism",
         "img_src": "assets/vote-buying.jpg",
         "img_alt": "",
         "link": "https://pcij.org/2023/10/31/comelec-urged-to-see-prosecution-of-vote-buying-cases-through/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "investigation" ],
         "category": "enterprise",
         "subject": [ "elections", "money & politics" ]
@@ -305,7 +329,7 @@
         "img_src": "assets/invisible.jpg",
         "img_alt": "",
         "link": "https://vimeo.com/448190370",
-        "description": "",
+        "description": "Official selection of the Philippines’ first documentary film festival, <b>Daang Dokyu</b>",
         "featured": true,
         "type": [ "documentary" ],
         "category": "documentary",
@@ -334,18 +358,6 @@
         "type": [ "documentary" ],
         "category": "documentary",
         "subject": [ "health", "government", "cross-border" ]
-    },
-    {
-        "title": "Jews, Asians, gays most targeted for hate crimes: NYPD data",
-        "publisher": "Personal project",
-        "img_src": "assets/hate-crimes.png",
-        "img_alt": "Analysis of hate crime patterns in New York City",
-        "link": "https://cmgsalazar.github.io/lede/nyc-hate-crimes/",
-        "description": "",
-        "featured": false,
-        "type": [ "data" ],
-        "category": "analysis",
-        "subject": [ "local accountability" ]
     },
         { 
         "title": "Isko Moreno’s overspending case still in limbo after five years",

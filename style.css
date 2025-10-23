@@ -62,7 +62,7 @@ h5,
 .navbar,
 footer {
     background-color: var(--red);
-    height: 5vh;
+    height: fit-content;
     color: var(--light);
     font-family: var(--serif);
 }
@@ -155,8 +155,7 @@ footer {
 
 #bio-container {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 3fr 4fr;
     margin: 80px;
     gap: 20px;
 }
@@ -165,26 +164,25 @@ footer {
     flex: 1;
 }
 
+.profile-main {
+    display: grid;
+    grid-template-rows: 12fr 3fr;
+}
+
 .profile-photo {
     position: relative;
-    grid-column: 1;
-    grid-row: 1;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 
     img {
         max-width: 70%; 
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     figcaption,
     .credit {
         font-family: var(--sans-serif);
         font-size: 0.8rem;
-        text-align: center;
         line-height: 1.4;
         color: var(--grey);
     }
@@ -202,26 +200,11 @@ footer {
     }
 }
 
-#hi {
-    font-family: var(--title);
-    font-size: 5.8rem;
-    z-index: 1000;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    transform: rotate(-90deg);
-    transform-origin: left center;
-}
-
 #headshot {
     box-shadow: 16px 16px var(--red);
 }
 
 .flip-card {
-    position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
@@ -239,7 +222,6 @@ footer {
     height: 100%;
     backface-visibility: hidden;
     align-items: center;
-    justify-content: center;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column; 
@@ -251,10 +233,6 @@ footer {
 }
 
 .profile-bio {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    margin: -120px 20px 0;
-
     p {
         font-family: var(--sans-serif);
         font-size: 0.9rem;
@@ -362,8 +340,9 @@ footer {
 /* WORKS */
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    min-width: fit-content;
+    max-width: 1000px;
+    margin: 0 5%;
 }
 
 .works-container {
@@ -393,9 +372,32 @@ main {
     }
 }
 
+.tabs.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    background-color: var(--light);
+    z-index: 1000;
+}
+
+#works-header {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+#menu-toggle {
+    display: inline-block;
+    background-color: var(--light);
+    color: var(--dark);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 #works-header,
 #menu-toggle {
-    display: none;
+    display: none; /* off on desktop */
 }
 
 .portfolio-grid {
@@ -461,7 +463,7 @@ main {
             font-family: var(--serif);
             font-weight: 600;
             line-height: 1.2;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-decoration: none;
             transition: color 0.5s ease-in-out;
         }
@@ -481,6 +483,31 @@ main {
     .portfolio-subject {
         color: var(--grey);
         font-size: 0.8rem;
+    }
+
+    .portfolio-desc {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--dark);
+        font-size: 0.9rem;
+        font-weight: 100;
+        padding-top: 5px;
+
+        a {
+            color: inherit;
+            font-weight: 500;
+            text-decoration: 1px underline dotted var(--grey);
+            font-kerning: none;
+        }
+
+        a:hover {
+            color: var(--light);
+            background-color: var(--dark);
+        }
+
+        b {
+            font-weight: 500;
+        }
     }
 }
 
@@ -528,7 +555,6 @@ main {
     }
 }
 
-
 .portfolio-category.interactive, 
 .portfolio-category.analysis {
     background-color: var(--data);
@@ -540,7 +566,8 @@ main {
 
 .portfolio-category.enterprise, 
 .portfolio-category.breaking, 
-.portfolio-category.feature {
+.portfolio-category.feature,
+.portfolio-category.essay {
     background-color: var(--reporting);
 }
 
@@ -552,85 +579,13 @@ main {
 
 /* MOBILE */
 
-/* large devices (desktops, 992px and up) */
-@media (min-width: 990px) and (max-width: 1200px) {
-    main {
-        margin: 0 5%;
-    }
-
-    #hi {
-        font-size: 4.4rem;
-    }
-
-    .profile-bio {
-        grid-column: 1;
-        margin-top: 10;
-
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
+@media (max-width: 1024px) {
     .bio {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 989px) {
     main {
-        margin: 0 5%;
-    }
-
-    .navbar {
-        font-size: 0.7rem;
-    }
-
-    svg {
-        width: 5%;
-        height: auto;
-    }
-
-    h5,
-    .portfolio-publisher {
-        font-size: 0.75rem;
-    }
-
-    #bio-container {
-        margin: 5%;
-        padding-right: 2%;
-        gap: 25px;
-    }
-
-    #hi {
-        font-size: 3.4rem;
-        top: 75%;
-    }
-
-    .profile-photo {
-        aspect-ratio: auto;
-    }
-
-    .profile-bio {
-        margin: 20px 0;
-        padding-top: 5%;
-
-        h4 {
-            font-size: 1.2rem;
-        }
-
-        p {
-            font-size: 0.8rem;
-        }
-    }
-
-    .bio {
-        font-size: 0.75rem;
-        line-height: 1.6;
+        margin: 0 3%;
     }
 
     .portfolio-grid {
@@ -646,127 +601,136 @@ main {
         .portfolio-subject {
             font-size: 0.8rem;
         }
+
+        .portfolio-desc {
+            font-size: 0.9rem;
+        }
     }
 }
 
-/* small devices (landscape phones, 576px and up) */
-@media (min-width: 320px) and (max-width: 767px) {
-    body {
-        font-size: 20px;
-    }
-
-    main {
-        margin: 0 5%;
-    }
-
-    .navbar {
-        font-size: 0.6rem;
-    }
-
-    .socmed-links {
-        img {
-            height: 12px;
-            padding: 0 0.3rem;
-        }
-    }
-
-    svg {
-        width: 10%;
-    }
-
-    h5,
-    .portfolio-publisher {
-        font-size: 0.75rem;
-    }
-
+@media (max-width: 905px) {
     #bio-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        margin: 10%;
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10% auto;
+        gap: 1.2rem;
+        max-width: 90%;
     }
 
     .column {
-        grid-column: 1;
-        grid-row: auto;
-        position: static !important;
+        flex: none;
     }
 
-    #hi {
-        display: none;
+    .profile-main {
+        width: 100%;
+        max-height: fit-content !important;
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
     }
 
     .profile-photo {
-        position: relative;
-        height: min-content;
-        margin: 0;
-        aspect-ratio: auto;
+        display: block;
+        text-align: center;
+        margin: 0 auto 0;
+        padding: 0.5rem 0 0;
+        max-height: 30svh;
+        grid-row: 1;
     }
 
     .flip-card {
         position: relative;
-        height: 30svh;
+        width: 100%;
+        height: auto !important;
+        transform: none !important;
+        transition: none !important;
     }
 
     .card-front,
     .card-back {
-        position: absolute;
-        height: min-content;
-        margin: 0;
-        max-height: 20svh;
-        width: auto;
+        position: relative;
+        transform: none !important;
+        backface-visibility: visible !important;
+        height: auto !important;
+        display: block;
+    }
+
+    .card-back {
+        display: none !important;
+    }
+
+    .profile-photo img {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .profile-bio {
-        margin: 50% 0 0;
-
-        h4 {
-            font-size: 1.2rem;
-        }
-
-        p {
-            font-size: 0.8rem;
-        }
+        margin-top: 0.5rem 0 0;
+        text-align: center;
+        position: relative;
+        align-content: end;
+        grid-row: 1;
     }
 
-    .bio {
-        font-size: 0.8rem;
-        line-height: 1.6;
+    .portfolio-text {
+        grid-row: 2;
     }
 
-    .tabs {
-        display: none;
+    .portfolio-grid {
+        margin: 0 0.5rem;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
 
-        button {
-            font-family: var(--title);
-            background-color: inherit;
-            border: 0.2px dotted var(--red);
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding: 10px;
-            transition: 0.3s;
-            border-radius: 0;
+    .portfolio-item {
+        margin: 0;
+        padding-bottom: 20px;
+        border-bottom: 0.5px dashed var(--red);
 
-            &:hover {
-                background-color: var(--grey);
-            }
+        .portfolio-title {
+            margin: 0;
 
-            &.active {
-                background-color: var(--red);
-                color: var(--light);
+            a {
+                font-size: 1.5rem;
             }
         }
 
-        &.show {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            left: 10%;
-            background-color: var(--light);
-            z-index: 1000;
+        .portfolio-subject {
+            font-size: 0.9rem;
         }
+    }
+}
+
+@media (max-width: 695px) {
+    .profile-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* margin-bottom: 20px; */
+    }
+
+    .profile-photo {
+        display: block;
+        text-align: center;
+        margin: 0 auto 0;
+        padding: 0;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .profile-bio {
+        margin-top: 0.5rem;
+        text-align: center;
+        position: relative;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #works-header,
+    #menu-toggle {
+        display: inline-block;
     }
 
     #menu-toggle {
@@ -783,22 +747,8 @@ main {
         font-size: 1.2rem;
     }
 
-    .portfolio-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+    .tabs {
+        display: none;
     }
-
-    .portfolio-item {
-        .portfolio-title {
-            font-size: 0.7rem;
-        }
-
-        .portfolio-category {
-            font-size: 0.75rem;
-        }
-
-        .portfolio-subject {
-            font-size: 0.8rem;
-        }
-    }
+    
 }

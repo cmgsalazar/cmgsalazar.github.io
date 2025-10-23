@@ -6,3 +6,8 @@ newmarkj/how-bronx-voted-elections/images
 /_archived
 style.css.map
 *.scss
+extras.json
+template.json
+/node_modules
+package.json
+package-lock.json
