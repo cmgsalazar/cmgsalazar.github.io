@@ -350,6 +350,7 @@ main {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px double var(--red);
+    width: 90vw;
 }
 
 .tabs {
@@ -633,7 +634,7 @@ main {
     .profile-photo {
         display: block;
         text-align: center;
-        margin: 0 auto 0;
+        margin: 0 auto;
         padding: 0.5rem 0 0;
         max-height: 30svh;
         grid-row: 1;
@@ -705,10 +706,14 @@ main {
 }
 
 @media (max-width: 695px) {
+    svg {
+        display: none;
+    }
+
     .profile-main {
         display: grid;
         grid-template-columns: 1fr;
-        /* margin-bottom: 20px; */
+        margin-bottom: 20px;
     }
 
     .profile-photo {
@@ -726,6 +731,7 @@ main {
         position: relative;
         grid-column: 1;
         grid-row: 2;
+        align-content: center;
     }
 
     #works-header,
@@ -749,6 +755,11 @@ main {
 
     .tabs {
         display: none;
+    }   
+}
+
+@media (max-width: 570px) {
+    .profile-main {
+        grid-template-rows: 1fr 1fr;
     }
-    
 }
