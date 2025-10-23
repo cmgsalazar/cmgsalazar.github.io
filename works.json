@@ -282,7 +282,7 @@
         "img_alt": "",
         "link": "",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data" ],
         "category": "analysis",
         "subject": [ "elections", "money & politics" ]
