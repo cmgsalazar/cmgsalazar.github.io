@@ -16,7 +16,7 @@ backToTopButton.onclick = function() {
 
 // add widont functionality
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll("p.bio");
+    const elements = document.querySelectorAll("p");
     elements.forEach(function(el) {
         el.innerHTML = widont(el.innerHTML, "html", 2);
     });
