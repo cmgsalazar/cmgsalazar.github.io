@@ -102,7 +102,7 @@
         "img_alt": "",
         "link": "https://cmgsalazar.github.io/newmarkj/melrose-superfund",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "miscellaneous" ],
         "category": "multimedia",
         "subject": ["local accountability", "environment", "health" ]
@@ -198,7 +198,7 @@
         "img_alt": "As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford",
         "link": "https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "miscellaneous" ],
         "category": "multimedia",
         "subject": [ "health", "labor & employment", "local accountability" ]
@@ -282,7 +282,7 @@
         "img_alt": "",
         "link": "https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "investigation" ],
         "category": "investigative",
         "subject": [ "elections", "money & politics" ]
@@ -306,7 +306,7 @@
         "img_alt": "",
         "link": "https://pcij.org/2021/05/11/potential-bets-start-advertising-on-facebook-as-2022-campaign-shifts-to-social-media/",
         "description": "Best Data-driven Story (Philippines) at the <b>2021 ExcEl Award (Excellence in Election Reporting in Southeast Asia)</b>",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "investigation" ],
         "category": "analysis",
         "subject": [ "elections", "money & politics" ]
