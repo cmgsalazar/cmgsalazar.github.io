@@ -11,17 +11,17 @@
         "category": "interactive",
         "subject": [ ]
     },
-    {
-        "title": "Chicago Public Schools’ nearly $10 billion in debt stands out among districts",
+    { 
+        "title": "Attendance drops at Chicago schools in communities with increased immigration enforcement",
         "publisher": "Chalkbeat",
-        "img_src": "assets/cps-debt.jpg",
+        "img_src": "assets/chicago-attendance.jpg",
         "img_alt": "",
-        "link": "https://www.chalkbeat.org/chicago/2025/08/26/chicago-public-schools-debt-census-data/",
+        "link": "https://www.chalkbeat.org/chicago/2025/10/31/school-attendance-down-in-latino-immigrant-neighborhoods-amid-ice-operation/",
         "description": "",
         "featured": true,
-        "type": [ "data", "graphic" ],
+        "type": [ "data" ],
         "category": "analysis",
-        "subject": [ "education", "local accountability" ]
+        "subject": [ "education" ]
     },
     { 
         "title": "96.2% of climate news stories don’t cover animal agriculture as a pollution source",
@@ -34,6 +34,18 @@
         "type": [ "data", "graphic" ],
         "category": "analysis",
         "subject": [ "climate" ]
+    },
+    {
+        "title": "Chicago Public Schools’ nearly $10 billion in debt stands out among districts",
+        "publisher": "Chalkbeat",
+        "img_src": "assets/cps-debt.jpg",
+        "img_alt": "",
+        "link": "https://www.chalkbeat.org/chicago/2025/08/26/chicago-public-schools-debt-census-data/",
+        "description": "",
+        "featured": true,
+        "type": [ "data", "graphic" ],
+        "category": "analysis",
+        "subject": [ "education", "local accountability" ]
     },
     { 
         "title": "Worries emerge about Philly’s process for closing and consolidating schools",
@@ -100,7 +112,7 @@
         "publisher": "Personal project",
         "img_src": "assets/bx-elections.gif",
         "img_alt": "Map of how Bronxites voted in the elections",
-        "link": "https://github.com/cmgsalazar/us-elex-official-results",
+        "link": "https://cmgsalazar.github.io/us-elex-official-results",
         "description": "",
         "featured": true,
         "type": [ "data", "graphic" ],
