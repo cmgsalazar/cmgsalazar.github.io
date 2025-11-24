@@ -5,11 +5,35 @@
         "img_src": "assets/self-care.jpg",
         "img_alt": "Illustration of a person lying in bed with their hand over their forehead",
         "link": "https://cmgsalazar.github.io/self-check-in/",
-        "description": "An interactive quiz dedicated to my late sister, Maricel, that was based on <a href=\"https://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to\" target=\"_blank\">a self-care questionnaire</a> published in 2015",
+        "description": "An interactive quiz dedicated to my late sister, Maricel, that was based on <a href=\"https://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to\" target=\"_blank\">a self-care questionnaire</a> that was published in 2015",
         "featured": true,
         "type": [ "data", "graphic" ],
         "category": "interactive",
         "subject": [ ]
+    },
+    { 
+        "title": "Lax oversight, few inspections leave child farmworkers exposed to toxic pesticides",
+        "publisher": "Capital & Main",
+        "img_src": "assets/ca-pesticides.jpg",
+        "img_alt": "",
+        "link": "https://capitalandmain.com/lax-oversight-few-inspections-leave-child-farmworkers-exposed-to-toxic-pesticides",
+        "description": "Second part of an investigative series on child farmworkers in California, also published in the <a href='https://www.latimes.com/california/story/2025-11-20/child-farmworkers-toxic-pesticides-exposure' target='_blank'>Los Angeles Times</a>  <a href=https://capitalandmain.com/californias-child-farmworkers-exhausted-underpaid-and-toiling-in-toxic-fields' target='_blank'>(Read the first part here.)</a>",
+        "featured": true,
+        "type": [ "data" ],
+        "category": "analysis",
+        "subject": [ "local accountability", "labor & employment" ]
+    },
+    { 
+        "title": "NextEra plots Iowa nuclear comeback amid regulatory friction, AI demand doubts",
+        "publisher": "Times Square Investment Journal",
+        "img_src": "assets/ai-nuclear.jpg",
+        "img_alt": "Duane Arnold Energy Center in Palo, Iowa",
+        "link": "https://coveringcompanies.journalism.cuny.edu/2025/11/12/nextera-plots-iowa-nuclear-comeback-amid-regulatory-friction-ai-demand-doubts/",
+        "description": "",
+        "featured": true,
+        "type": [ "data", "miscellaneous" ],
+        "category": "enterprise",
+        "subject": [ "business & economy", "energy", "labor & employment", "climate", "local accountability" ]
     },
     { 
         "title": "Attendance drops at Chicago schools in communities with increased immigration enforcement",
@@ -114,7 +138,7 @@
         "img_alt": "Map of how Bronxites voted in the elections",
         "link": "https://cmgsalazar.github.io/us-elex-official-results",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "graphic" ],
         "category": "interactive",
         "subject": [ "elections" ]
@@ -312,7 +336,7 @@
         "subject": [ "elections", "money & politics" ]
     },
     { 
-        "title": "Sacred Showers",
+        "title": "Sacred showers",
         "publisher": "Philippine Daily Inquirer (Youngblood)",
         "img_src": "assets/youngblood.jpg",
         "img_alt": "",
@@ -330,7 +354,7 @@
         "img_alt": "",
         "link": "https://www.youtube.com/watch?v=uUuTyYK6t7U",
         "description": "Finalist at the <b>2017 UNICEF Asia-Pacific Child Rights Award for Television</b>",
-        "featured": true,
+        "featured": false,
         "type": [ "documentary"],
         "category": "documentary" ,
         "subject": [ "education", "health" ]
@@ -371,6 +395,18 @@
         "category": "enterprise",
         "subject": [ "press freedom", "government" ]
     },
+    { 
+        "title": "Isko Moreno’s overspending case still in limbo after five years",
+        "publisher": "Philippine Center for Investigative Journalism",
+        "img_src": "assets/isko.jpg",
+        "img_alt": "",
+        "link": "https://pcij.org/2022/09/22/isko-moreno-overspending-limbo/",
+        "description": "",
+        "featured": false,
+        "type": [ "investigation" ],
+        "category": "investigative",
+        "subject": [ "elections", "money & politics" ]
+    },
     {
         "title": "HIV Rising",
         "publisher": "ABS-CBN DocuCentral",
@@ -382,17 +418,5 @@
         "type": [ "documentary" ],
         "category": "documentary",
         "subject": [ "health", "government", "cross-border" ]
-    },
-        { 
-        "title": "Isko Moreno’s overspending case still in limbo after five years",
-        "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/isko.jpg",
-        "img_alt": "",
-        "link": "https://pcij.org/2022/09/22/isko-moreno-overspending-limbo/",
-        "description": "",
-        "featured": false,
-        "type": [ "investigation" ],
-        "category": "investigative",
-        "subject": [ "elections", "money & politics" ]
     }
 ]
