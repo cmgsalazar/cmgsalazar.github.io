@@ -395,18 +395,6 @@
         "category": "enterprise",
         "subject": [ "press freedom", "government" ]
     },
-    { 
-        "title": "Isko Moreno’s overspending case still in limbo after five years",
-        "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/isko.jpg",
-        "img_alt": "",
-        "link": "https://pcij.org/2022/09/22/isko-moreno-overspending-limbo/",
-        "description": "",
-        "featured": false,
-        "type": [ "investigation" ],
-        "category": "investigative",
-        "subject": [ "elections", "money & politics" ]
-    },
     {
         "title": "HIV Rising",
         "publisher": "ABS-CBN DocuCentral",
