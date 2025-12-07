@@ -5,7 +5,7 @@
         "img_src": "assets/self-care.jpg",
         "img_alt": "Illustration of a person lying in bed with their hand over their forehead",
         "link": "https://cmgsalazar.github.io/self-check-in/",
-        "description": "An interactive quiz dedicated to my late sister, Maricel, that was based on <a href=\"https://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to\" target=\"_blank\">a self-care questionnaire</a> that was published in 2015",
+        "description": "An interactive quiz dedicated to my late sister, Maricel, based on <a href=\"https://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to\" target=\"_blank\">a self-care questionnaire</a> published in 2015",
         "featured": true,
         "type": [ "data", "graphic" ],
         "category": "interactive",
@@ -17,7 +17,7 @@
         "img_src": "assets/ca-pesticides.jpg",
         "img_alt": "",
         "link": "https://capitalandmain.com/lax-oversight-few-inspections-leave-child-farmworkers-exposed-to-toxic-pesticides",
-        "description": "Second part of an investigative series on child farmworkers in California, also published in the <a href='https://www.latimes.com/california/story/2025-11-20/child-farmworkers-toxic-pesticides-exposure' target='_blank'>Los Angeles Times</a>  <a href=https://capitalandmain.com/californias-child-farmworkers-exhausted-underpaid-and-toiling-in-toxic-fields' target='_blank'>(Read the first part here.)</a>",
+        "description": "Second part of an investigative series on child farmworkers in California, also published in the <a href='https://www.latimes.com/california/story/2025-11-20/child-farmworkers-toxic-pesticides-exposure' target='_blank'>Los Angeles Times</a> <a href='https://capitalandmain.com/californias-child-farmworkers-exhausted-underpaid-and-toiling-in-toxic-fields' target='_blank'>(Read the first part here.)</a>",
         "featured": true,
         "type": [ "data" ],
         "category": "analysis",
@@ -70,6 +70,18 @@
         "type": [ "data", "graphic" ],
         "category": "analysis",
         "subject": [ "education", "local accountability" ]
+    },
+    { 
+        "title": "As pandemic boom fades, Moderna’s market momentum reverses",
+        "publisher": "Times Square Investment Journal",
+        "img_src": "assets/moderna.jpg",
+        "img_alt": "",
+        "link": "https://coveringcompanies.journalism.cuny.edu/2025/09/22/as-pandemic-boom-fades-modernas-market-momentum-reverses/",
+        "description": "",
+        "featured": true,
+        "type": [ "data", "graphic", "miscellaneous" ],
+        "category": "enterprise",
+        "subject": [ "business & economy", "health" ]
     },
     { 
         "title": "Worries emerge about Philly’s process for closing and consolidating schools",
