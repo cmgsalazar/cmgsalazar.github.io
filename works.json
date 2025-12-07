@@ -78,7 +78,7 @@
         "img_alt": "",
         "link": "https://coveringcompanies.journalism.cuny.edu/2025/09/22/as-pandemic-boom-fades-modernas-market-momentum-reverses/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "graphic", "miscellaneous" ],
         "category": "enterprise",
         "subject": [ "business & economy", "health" ]
@@ -318,7 +318,7 @@
         "img_alt": "",
         "link": "https://pcij.org/2023/05/09/moneyed-kin-personal-coffers-paved-senate-victories-in-2022/",
         "description": "",
-        "featured": false,
+        "featured": true,
         "type": [ "data", "investigation" ],
         "category": "investigative",
         "subject": [ "elections", "money & politics" ]
@@ -390,7 +390,7 @@
         "img_alt": "",
         "link": "https://vimeo.com/448190370",
         "description": "Official selection of the Philippines’ first documentary film festival, <b>Daang Dokyu</b>",
-        "featured": true,
+        "featured": false,
         "type": [ "documentary" ],
         "category": "documentary",
         "subject": [ "health", "government" ]
