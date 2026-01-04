@@ -17,10 +17,10 @@
         "img_src": "assets/ca-pesticides.jpg",
         "img_alt": "",
         "link": "https://capitalandmain.com/lax-oversight-few-inspections-leave-child-farmworkers-exposed-to-toxic-pesticides",
-        "description": "Second part of an investigative series on child farmworkers in California, also published in the <a href='https://www.latimes.com/california/story/2025-11-20/child-farmworkers-toxic-pesticides-exposure' target='_blank'>Los Angeles Times</a> <a href='https://capitalandmain.com/californias-child-farmworkers-exhausted-underpaid-and-toiling-in-toxic-fields' target='_blank'>(Read the first part here.)</a>",
+        "description": "Second part of an investigative series on child farmworkers in California, also published in the <a href='https://www.latimes.com/california/story/2025-11-20/child-farmworkers-toxic-pesticides-exposure' target='_blank'>Los Angeles Times</a> <a href='https://capitalandmain.com/californias-child-farmworkers-exhausted-underpaid-and-toiling-in-toxic-fields' target='_blank'>(Read the first part here.)</a> The series received the <a href='https://www.journalism.cuny.edu/2025/12/mcgraw-fellow-robert-lopez-wins-sidney-award-for-detailing-child-labor-abuses-on-california-farms/' target='_blank'>Sidney Award</a> in December 2025.",
         "featured": true,
         "type": [ "data" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "local accountability", "labor & employment" ]
     },
     { 
@@ -44,7 +44,7 @@
         "description": "",
         "featured": true,
         "type": [ "data" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "education" ]
     },
     { 
@@ -56,7 +56,7 @@
         "description": "Published during the <b>2025 NYC Climate Week</b> and covered by <a href=\"https://www.theguardian.com/environment/2025/sep/27/meat-gas-emissions-reporting\" target=\"_blank\">The Guardian</a>",
         "featured": true,
         "type": [ "data", "graphic" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "climate" ]
     },
     {
@@ -68,7 +68,7 @@
         "description": "",
         "featured": true,
         "type": [ "data", "graphic" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "education", "local accountability" ]
     },
     { 
@@ -332,7 +332,7 @@
         "description": "",
         "featured": false,
         "type": [ "data" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "elections", "money & politics" ]
     },
     { 
@@ -344,20 +344,8 @@
         "description": "Best Data-driven Story (Philippines) at the <b>2021 ExcEl Award (Excellence in Election Reporting in Southeast Asia)</b>",
         "featured": false,
         "type": [ "data", "investigation" ],
-        "category": "analysis",
+        "category": "data analysis",
         "subject": [ "elections", "money & politics" ]
-    },
-    { 
-        "title": "Sacred showers",
-        "publisher": "Philippine Daily Inquirer (Youngblood)",
-        "img_src": "assets/youngblood.jpg",
-        "img_alt": "",
-        "link": "https://opinion.inquirer.net/146262/sacred-showers/",
-        "description": "",
-        "featured": false,
-        "type": [ "miscellaneous"],
-        "category": "essay" ,
-        "subject": [ ]
     },
     { 
         "title": "<i>Mukha: Eskwela</i> (Faces: Learners)",
