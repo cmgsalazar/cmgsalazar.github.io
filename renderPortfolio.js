@@ -2,8 +2,17 @@ async function loadPortfolio() {
     try {
         const response = await fetch("works.json");
         const data = await response.json();
+        
+        // set up sample works grid
         const container = document.querySelector(".portfolio-grid");
+
+        // set up dropdown for subjects
+        const dropdown = document.getElementById("dropdown");
+        const subjects = new Set();
+        
         data.forEach(item => {
+            item.subject.forEach(subj => subjects.add(subj)); // collects subjects
+
             const div = document.createElement("div");
             div.className = `portfolio-item ${item.type.join(" ")}`;
             div.dataset.featured = item.featured || false; // saves the featured key from JSON
@@ -23,10 +32,26 @@ async function loadPortfolio() {
                     <p class="portfolio-desc">${widontDesc}</p>
                 </div>
             `
-        container.appendChild(div);
+            container.appendChild(div);
         });
+
+        // sort and populate dropdown
+        Array.from(subjects).sort().forEach(subj => {
+            const subjectText = subj.charAt(0).toUpperCase() + subj.slice(1);
+            dropdown.add(new Option(subjectText, subj));
+        });
+
+        dropdown.addEventListener("change", (subj) => {
+            const selectedSubject = subj.target.value;
+            const buttons = document.querySelectorAll(".tabs button");
+            buttons.forEach(btn => btn.classList.remove("active"));
+            document.querySelector('.tabs button[data-filter="all"]').classList.add("active");
+            filterSubject(selectedSubject);
+        });
+
         setFilters(); // tabs function
         filterItems("featured"); // show featured by default
+    
     } catch (error) {
         console.log(error);
     }
@@ -56,9 +81,12 @@ function setFilters() {
                 header.textContent = "Miscellaneous";
             }
 
+            // reset dropdown to default
+            dropdown.value = "";
+            filterSubject("");
             filterItems(filter);
-        })
-    })
+        });
+    });
 }
 
 function filterItems(filter) {
@@ -84,6 +112,22 @@ function filterItems(filter) {
             } else {
                 project.classList.add("hidden");
             }
+        }
+    });
+}
+
+function filterSubject(subject) {
+    const projects = document.querySelectorAll(".portfolio-item");
+    projects.forEach(project => {
+        const subjectSpan = project.querySelector(".portfolio-subject");
+        const subjectPerProject = subjectSpan.textContent.split(", ");
+        
+        if (subject === "") {
+            project.classList.remove("hidden");
+        } else if (subjectPerProject.includes(subject)) {
+            project.classList.remove("hidden");
+        } else {
+            project.classList.add("hidden");
         }
     });
 }
