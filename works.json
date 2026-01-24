@@ -1,7 +1,7 @@
 [
     {
         "title": "Everything is awful, and you’re not okay: Questions to ask when you feel like giving up",
-        "publisher": "Personal project",
+        "publisher": "📌 Personal project",
         "img_src": "assets/self-care.jpg",
         "img_alt": "Illustration of a person lying in bed with their hand over their forehead",
         "link": "https://cmgsalazar.github.io/self-check-in/",
@@ -53,7 +53,7 @@
         "img_src": "assets/animal-ag.png",
         "img_alt": "",
         "link": "https://sentientmedia.org/climate-news-analysis/",
-        "description": "Published during the <b>2025 NYC Climate Week</b> and covered by <a href=\"https://www.theguardian.com/environment/2025/sep/27/meat-gas-emissions-reporting\" target=\"_blank\">The Guardian</a>",
+        "description": "Highlighted in reports by <a href=\"https://www.theguardian.com/environment/2025/sep/27/meat-gas-emissions-reporting\" target=\"_blank\">The Guardian</a> and the <a href=\"https://www.biologicaldiversity.org/programs/population_and_sustainability/pdfs/2025-media-landscape-analysis.pdf\" target=\"_blank\">Center for Biological Diversity</a>",
         "featured": true,
         "type": [ "data", "graphic" ],
         "category": "data analysis",
@@ -188,7 +188,7 @@
         "description": "",
         "featured": false,
         "type": [ "investigation" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "labor & employment", "government", "cross-border" ]
     },
     {
@@ -200,7 +200,7 @@
         "description": "",
         "featured": true,
         "type": [ "investigation" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "elections", "money & politics" ]
     },
     {
@@ -224,7 +224,7 @@
         "description": "",
         "featured": true,
         "type": [ "investigation", "graphic" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "environment", "energy", "climate" ]
     },
     {
@@ -248,7 +248,7 @@
         "description": "",
         "featured": true,
         "type": [ "data", "investigation" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "labor & employment", "environment", "energy", "health" ]
     },
     { 
@@ -272,7 +272,7 @@
         "description": "",
         "featured": false,
         "type": [ "data", "investigation" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "energy", "environment", "climate", "government" ]
     },
     {
@@ -284,7 +284,7 @@
         "description": "",
         "featured": true,
         "type": [ "miscellaneous" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "elections", "disinformation", "press freedom" ]
     },
     { 
@@ -320,7 +320,7 @@
         "description": "",
         "featured": true,
         "type": [ "data", "investigation" ],
-        "category": "investigative",
+        "category": "investigation",
         "subject": [ "elections", "money & politics" ]
     },
     { 
