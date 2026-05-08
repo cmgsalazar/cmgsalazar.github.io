@@ -12,6 +12,18 @@
         "subject": [ ]
     },
     { 
+        "title": "Chicago students took more than 13,000 dual credit classes last year. Is it helping them get ahead?",
+        "publisher": "Chalkbeat",
+        "img_src": "assets/chicago-dualcredit.jpg",
+        "img_alt": "",
+        "link": "https://www.chalkbeat.org/chicago/2026/03/29/chicago-public-schools-dual-credit-data-analysis-shows-mixed-college-impact/",
+        "description": "",
+        "featured": false,
+        "type": [ "data" ],
+        "category": "data analysis",
+        "subject": [ "education" ]
+    },
+    { 
         "title": "Lax oversight, few inspections leave child farmworkers exposed to toxic pesticides",
         "publisher": "Capital & Main",
         "img_src": "assets/ca-pesticides.jpg",
@@ -42,7 +54,7 @@
         "img_alt": "",
         "link": "https://www.chalkbeat.org/chicago/2025/10/31/school-attendance-down-in-latino-immigrant-neighborhoods-amid-ice-operation/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data" ],
         "category": "data analysis",
         "subject": [ "education" ]
@@ -102,7 +114,7 @@
         "img_alt": "",
         "link": "https://issuenumberone.journalism.cuny.edu/2025/08/02/fed-faces-tough-call-with-weakest-job-gains-so-far-under-trump-2-0/",
         "description": "",
-        "featured": true,
+        "featured": false,
         "type": [ "data", "graphic", "miscellaneous" ],
         "category": "breaking",
         "subject": [ "business & economy", "government" ]
@@ -227,18 +239,6 @@
         "category": "investigation",
         "subject": [ "environment", "energy", "climate" ]
     },
-    {
-        "title": "Pandemic underscores struggles of Manila’s urban poor communities without access to clean water",
-        "publisher": "Philippine Center for Investigative Journalism",
-        "img_src": "assets/covid-water-access.jpg",
-        "img_alt": "As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford",
-        "link": "https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/",
-        "description": "",
-        "featured": false,
-        "type": [ "miscellaneous" ],
-        "category": "multimedia",
-        "subject": [ "health", "labor & employment", "local accountability" ]
-    },
     { 
         "title": "The last fishermen of Ilijan",
         "publisher": "Philippine Center for Investigative Journalism",
@@ -273,7 +273,7 @@
         "featured": false,
         "type": [ "data", "investigation" ],
         "category": "investigation",
-        "subject": [ "energy", "environment", "climate", "government" ]
+        "subject": [ "energy", "environment", "climate", "business & economy", "government" ]
     },
     {
         "title": "Marcos leads presidential race amid massive disinformation",
@@ -286,6 +286,18 @@
         "type": [ "miscellaneous" ],
         "category": "investigation",
         "subject": [ "elections", "disinformation", "press freedom" ]
+    },
+    {
+        "title": "Pandemic underscores struggles of Manila’s urban poor communities without access to clean water",
+        "publisher": "Philippine Center for Investigative Journalism",
+        "img_src": "assets/covid-water-access.jpg",
+        "img_alt": "As pandemic lockdowns hit livelihoods, handwashing is a luxury some families cannot afford",
+        "link": "https://pcij.org/2021/09/02/pandemic-underscores-struggles-of-manilas-urban-poor-communities-without-access-to-clean-water/",
+        "description": "",
+        "featured": true,
+        "type": [ "miscellaneous" ],
+        "category": "multimedia",
+        "subject": [ "health", "labor & employment", "local accountability" ]
     },
     { 
         "title": "<i>‘Di Ka Pasisiil</i> (Never Shall Be Conquered)",
@@ -378,7 +390,7 @@
         "img_alt": "",
         "link": "https://vimeo.com/448190370",
         "description": "Official selection of the Philippines’ first documentary film festival, <b>Daang Dokyu</b>",
-        "featured": false,
+        "featured": true,
         "type": [ "documentary" ],
         "category": "documentary",
         "subject": [ "health", "government" ]
